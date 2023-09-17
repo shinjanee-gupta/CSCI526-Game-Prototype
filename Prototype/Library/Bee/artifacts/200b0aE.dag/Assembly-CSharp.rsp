@@ -370,6 +370,7 @@
 "Assets/Scripts/GroundCrumble.cs"
 "Assets/Scripts/PlayerMovement.cs"
 "Assets/Scripts/TimerUI.cs"
+"Assets/Scripts/TriggerCameraMove.cs"
 -langversion:9.0
 
 /deterministic
