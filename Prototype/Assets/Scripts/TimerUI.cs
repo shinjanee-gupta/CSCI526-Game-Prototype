@@ -1,9 +1,10 @@
 using UnityEngine;
-using TMPro; // If using TextMeshPro
+using TMPro; 
 
 public class TimerUI : MonoBehaviour
 {
     public float timeLeft = 40f;
+    private bool isPaused = false;  
 
     private TextMeshProUGUI timerText; 
 
@@ -14,7 +15,7 @@ public class TimerUI : MonoBehaviour
 
     private void Update()
     {
-        if (timeLeft > 0)
+        if (!isPaused && timeLeft > 0) 
         {
             timeLeft -= Time.deltaTime;
             UpdateTimerDisplay();
@@ -26,5 +27,10 @@ public class TimerUI : MonoBehaviour
         int minutes = (int)(timeLeft / 60);
         int seconds = (int)(timeLeft % 60);
         timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+    }
+
+    public void PauseTimer() 
+    {
+        isPaused = true;
     }
 }
