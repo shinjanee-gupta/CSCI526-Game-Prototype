@@ -5,11 +5,11 @@ public class TimerUI : MonoBehaviour
 {
     public float timeLeft = 40f;
 
-    private TextMeshProUGUI timerText; // If using TextMeshPro
+    private TextMeshProUGUI timerText; 
 
     private void Start()
     {
-        timerText = GetComponent<TextMeshProUGUI>(); // If using TextMeshPro
+        timerText = GetComponent<TextMeshProUGUI>();
     }
 
     private void Update()
