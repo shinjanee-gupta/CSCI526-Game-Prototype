@@ -3,8 +3,10 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5.0f;
+    public float jumpForce = 5.0f; // Jump force for player
     public GroundCrumble groundCrumble;
     private bool hasMovedForward = false;
+    private bool isGrounded = true;  // Mechanism to check if player is on ground
     private Rigidbody2D rb;
 
     private void Start() 
@@ -23,6 +25,21 @@ public class PlayerMovement : MonoBehaviour
         {
             hasMovedForward = true;
             groundCrumble.StartPlayerMovement();
+        }
+
+        // Jump with space bar when the player is grounded
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            isGrounded = false;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = true;
         }
     }
 }

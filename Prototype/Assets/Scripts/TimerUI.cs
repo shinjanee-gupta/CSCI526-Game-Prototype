@@ -3,7 +3,7 @@ using TMPro; // If using TextMeshPro
 
 public class TimerUI : MonoBehaviour
 {
-    public float timeLeft = 300f; // 5 minutes in seconds
+    public float timeLeft = 40f;
 
     private TextMeshProUGUI timerText; // If using TextMeshPro
 
