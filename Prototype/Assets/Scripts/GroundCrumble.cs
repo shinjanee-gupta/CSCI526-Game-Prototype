@@ -35,14 +35,26 @@ public class GroundCrumble : MonoBehaviour
     private void CrumbleGroundSegment()
     {
         Debug.Log("Attempting to crumble ground segment");
-        // Logic to identify and crumble the next ground segment
         GameObject nextSegment = GetNextGroundSegment();
         if (nextSegment != null)
         {
+            // Before destroying the segment, check for obstacles and enemies overlapping with the segment
+            Collider2D[] overlappedColliders = Physics2D.OverlapBoxAll(nextSegment.transform.position, nextSegment.GetComponent<Collider2D>().bounds.size, 0f);
+
+            foreach (Collider2D col in overlappedColliders)
+            {
+                if (col.CompareTag("Obstacle") || col.CompareTag("Weak Point"))
+                {
+                    // Deactivate the collider of the overlapping obstacles or enemies
+                    col.enabled = false;
+                }
+            }
+
             Debug.Log("Destroying: " + nextSegment.name);
             Destroy(nextSegment);
         }
     }
+
 
     private GameObject GetNextGroundSegment()
     {
