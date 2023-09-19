@@ -43,10 +43,15 @@ public class GroundCrumble : MonoBehaviour
 
             foreach (Collider2D col in overlappedColliders)
             {
-                if (col.CompareTag("Obstacle") || col.CompareTag("Weak Point"))
+                if (col.CompareTag("Obstacle"))
                 {
-                    // Deactivate the collider of the overlapping obstacles or enemies
-                    col.enabled = false;
+                    // If the ground crumbles below the obstacle, set its Rigidbody2D to dynamic so it can fall.
+                    Rigidbody2D rb = col.GetComponent<Rigidbody2D>();
+                    if (rb)
+                    {
+                        rb.isKinematic = false;
+                        rb.gravityScale = 1;  // Make sure the obstacle has gravity applied to it. Adjust the value as needed.
+                    }
                 }
             }
 

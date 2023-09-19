@@ -40,20 +40,20 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
+    //only enable jump again when player landed on Ground
    private void OnCollisionEnter2D(Collision2D collision)
-{
-    if (collision.gameObject.CompareTag("Ground"))
     {
-        foreach (ContactPoint2D point in collision.contacts)
+        if (collision.gameObject.CompareTag("Ground"))
         {
-            if (point.normal.y > 0.75f)  
+            foreach (ContactPoint2D point in collision.contacts)
             {
-                isGrounded = true;
-                return;  
+                if (point.normal.y > 0.75f)  
+                {
+                    isGrounded = true;
+                    return;  
+                }
             }
         }
     }
-}
 
 }
