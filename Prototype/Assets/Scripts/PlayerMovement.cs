@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5.0f;
-    public float jumpForce = 10.0f; // Jump force for player
+    public float jumpForce = 5.0f; // Jump force for player
     public GroundCrumble groundCrumble;
     private bool hasMovedForward = false;
     private bool isGrounded = true;  // Mechanism to check if player is on ground
