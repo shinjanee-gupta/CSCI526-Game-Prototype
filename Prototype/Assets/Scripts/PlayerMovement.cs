@@ -18,18 +18,13 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         float move = Input.GetAxis("Horizontal");
+        rb.velocity = new Vector2(move * speed, rb.velocity.y);
 
-        // Only allow movement if player is grounded
-        if (isGrounded)
+        // If the player has moved forward and not yet triggered ground crumbling
+        if (move > 0 && !hasMovedForward)
         {
-            rb.velocity = new Vector2(move * speed, rb.velocity.y);
-
-            // If the player has moved forward and not yet triggered ground crumbling
-            if (move > 0 && !hasMovedForward)
-            {
-                hasMovedForward = true;
-                groundCrumble.StartPlayerMovement();
-            }
+            hasMovedForward = true;
+            groundCrumble.StartPlayerMovement();
         }
 
         // Jump with space bar when the player is grounded
@@ -40,20 +35,11 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    //only enable jump again when player landed on Ground
-   private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Ground"))
         {
-            foreach (ContactPoint2D point in collision.contacts)
-            {
-                if (point.normal.y > 0.75f)  
-                {
-                    isGrounded = true;
-                    return;  
-                }
-            }
+            isGrounded = true;
         }
     }
-
 }

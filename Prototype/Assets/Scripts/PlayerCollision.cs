@@ -4,6 +4,8 @@ public class PlayerCollision : MonoBehaviour
 {
     private Rigidbody2D rb;
 
+    public float upwardForce = 500.0f;  
+    public float backwardForce = 200.0f; 
     public GameObject gameOverOverlay;  
     public TimerUI timerUI; 
 
@@ -15,13 +17,15 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //after colliding, stop the timer and player movement
         if (collision.gameObject.CompareTag("Obstacle"))
         {
+            Vector2 force = new Vector2(-backwardForce, upwardForce);
+            rb.AddForce(force);
+
             this.GetComponent<PlayerMovement>().enabled = false;
 
             gameOverOverlay.SetActive(true);
-            
+
             timerUI.PauseTimer();  
         }
     }
