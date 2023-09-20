@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     private bool hasMovedForward = false;
     private bool isGrounded = true;  // Mechanism to check if player is on ground
     private Rigidbody2D rb;
+    public GameObject endGameOverlay;
+    public TimerUI timerUI; 
 
     private void Start() 
     {
@@ -41,5 +43,16 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
         }
+        if (collision.gameObject.CompareTag("Last"))
+        {
+            ShowEndGameOverlay();
+        }
+    }
+
+    private void ShowEndGameOverlay()
+    {
+        endGameOverlay.SetActive(true);  // Show the overlay
+        timerUI.PauseTimer();  
+        this.enabled = false;
     }
 }
