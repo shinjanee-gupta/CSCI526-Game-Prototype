@@ -89,4 +89,10 @@ public class GroundCrumble : MonoBehaviour
         yield return new WaitForSeconds(seconds);
         isCrumblingPaused = false;
     }
+
+    public void StopCrumbling()
+    {
+        playerHasStarted = false;  // This will stop the ground from crumbling in the Update method
+        Debug.Log("Ground crumbling has stopped due to a player collision with an obstacle.");
+    }
 }
