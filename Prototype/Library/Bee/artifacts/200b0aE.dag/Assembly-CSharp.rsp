@@ -370,6 +370,7 @@
 "Assets/Scripts/EnemyDamage.cs"
 "Assets/Scripts/EnemyStomp.cs"
 "Assets/Scripts/GroundCrumble.cs"
+"Assets/Scripts/OpenScene.cs"
 "Assets/Scripts/PlayerCollision.cs"
 "Assets/Scripts/PlayerHealth.cs"
 "Assets/Scripts/PlayerMovement.cs"

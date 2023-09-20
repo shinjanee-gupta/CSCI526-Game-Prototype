@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -54,5 +55,13 @@ public class PlayerMovement : MonoBehaviour
         endGameOverlay.SetActive(true);  // Show the overlay
         timerUI.PauseTimer();  
         this.enabled = false;
+
+        Invoke("LoadMainScene", 10f);  // Call LoadMainScene after 10 seconds
     }
+
+    private void LoadMainScene()
+    {
+        SceneManager.LoadScene("MainScene");  // Replace "MainScene" with the actual name of your main scene
+    }
+
 }
