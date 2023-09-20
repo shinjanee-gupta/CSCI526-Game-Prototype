@@ -6,9 +6,10 @@ public class PlayerCollision : MonoBehaviour
 
     public float upwardForce = 500.0f;  
     public float backwardForce = 200.0f; 
-    public GameObject gameOverOverlay;  
-    public TimerUI timerUI; 
-
+    public GameObject gameOverOverlay;
+    public GameObject HintText;
+    public TimerUI timerUI;
+    
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,6 +28,28 @@ public class PlayerCollision : MonoBehaviour
             gameOverOverlay.SetActive(true);
 
             timerUI.PauseTimer();  
+        }
+
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Vector2 force = new Vector2(-backwardForce, upwardForce);
+            rb.AddForce(force);
+
+            this.GetComponent<PlayerMovement>().enabled = false;
+
+            gameOverOverlay.SetActive(true);
+
+            timerUI.PauseTimer();
+        }
+
+        if (collision.gameObject.CompareTag("Hint"))
+        {
+
+
+            HintText.SetActive(true);
+            //Display hint for next 10 seconds
+            
+
         }
     }
 }

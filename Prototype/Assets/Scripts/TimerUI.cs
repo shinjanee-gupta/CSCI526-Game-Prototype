@@ -1,12 +1,13 @@
 using UnityEngine;
-using TMPro; 
+using TMPro;
+using System.Collections;
 
 public class TimerUI : MonoBehaviour
 {
     public float timeLeft = 40f;
-    private bool isPaused = false;  
+    private bool isPaused = false;
 
-    private TextMeshProUGUI timerText; 
+    private TextMeshProUGUI timerText;
 
     private void Start()
     {
@@ -15,7 +16,7 @@ public class TimerUI : MonoBehaviour
 
     private void Update()
     {
-        if (!isPaused && timeLeft > 0) 
+        if (!isPaused && timeLeft > 0)
         {
             timeLeft -= Time.deltaTime;
             UpdateTimerDisplay();
@@ -29,8 +30,23 @@ public class TimerUI : MonoBehaviour
         timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
     }
 
-    public void PauseTimer() 
+    public void PauseTimer()
     {
         isPaused = true;
+    }
+
+    public void PauseTimer5s()
+    {
+        if (!isPaused)
+        {
+            StartCoroutine(PauseTimerForSeconds(5f));
+        }
+    }
+
+    private IEnumerator PauseTimerForSeconds(float seconds)
+    {
+        isPaused = true;
+        yield return new WaitForSeconds(seconds);
+        isPaused = false;
     }
 }

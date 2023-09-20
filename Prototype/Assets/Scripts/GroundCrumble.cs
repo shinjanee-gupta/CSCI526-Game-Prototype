@@ -8,6 +8,7 @@ public class GroundCrumble : MonoBehaviour
     private float timePassedSinceStart = 0f;
     private float crumbleThreshold = 2f; // start crumbling every 2 seconds
     private bool isCrumblingPaused = false;
+    public GameObject gameOverOverlay;
 
     void Update()
     {
@@ -53,6 +54,32 @@ public class GroundCrumble : MonoBehaviour
                         rb.gravityScale = 1;  // Make sure the obstacle has gravity applied to it. Adjust the value as needed.
                     }
                 }
+                if (col.CompareTag("Enemy"))
+                {
+                    // If the ground crumbles below the enemy, set its Rigidbody2D to dynamic so it can fall.
+                    Rigidbody2D rb = col.GetComponent<Rigidbody2D>();
+                    if (rb)
+                    {
+                        rb.isKinematic = false;
+                        rb.gravityScale = 1;  // Make sure the enemy has gravity applied to it. Adjust the value as needed.
+                    }
+                }
+
+
+                if (col.CompareTag("Player"))
+                {
+                    // If the ground crumbles below the enemy, set its Rigidbody2D to dynamic so it can fall.
+                    Rigidbody2D rb = col.GetComponent<Rigidbody2D>();
+                    gameOverOverlay.SetActive(true);
+                    if (rb)
+                    {
+                        rb.isKinematic = false;
+                        rb.gravityScale = 1;  // Make sure the Player has gravity applied to it. Adjust the value as needed.
+                        
+                    }
+                    
+                }
+
             }
 
             Debug.Log("Destroying: " + nextSegment.name);
