@@ -5,6 +5,11 @@ using UnityEngine;
 public class EnemyStomp : MonoBehaviour
 {
     public TimerUI timerUI;
+    private void Start()
+    {
+        timerUI = FindObjectOfType<TimerUI>(); 
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "Weak Point")

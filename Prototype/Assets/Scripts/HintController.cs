@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class HintController : MonoBehaviour
 {
-    public TextMeshPro hintText;
-    public float hintDisplayTime = 1f; // Change this to 5 seconds
+    public TextMeshProUGUI hintText;
+    public float hintDisplayTime = 10f;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
@@ -21,4 +21,5 @@ public class HintController : MonoBehaviour
         yield return new WaitForSeconds(hintDisplayTime);
         hintText.gameObject.SetActive(false);
     }
+
 }
