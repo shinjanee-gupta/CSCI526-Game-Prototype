@@ -8,11 +8,13 @@ public class PlayerCollision : MonoBehaviour
     public float backwardForce = 200.0f; 
     public GameObject gameOverOverlay;  
     public TimerUI timerUI; 
+    public GroundCrumble groundCrumble;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         timerUI = FindObjectOfType<TimerUI>(); 
+        groundCrumble = FindObjectOfType<GroundCrumble>(); 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -27,6 +29,7 @@ public class PlayerCollision : MonoBehaviour
             gameOverOverlay.SetActive(true);
 
             timerUI.PauseTimer();  
+            groundCrumble.StopCrumbling();
         }
     }
 }

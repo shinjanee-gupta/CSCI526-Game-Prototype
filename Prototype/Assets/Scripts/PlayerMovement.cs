@@ -54,8 +54,8 @@ public class PlayerMovement : MonoBehaviour
     {
         endGameOverlay.SetActive(true);  // Show the overlay
         timerUI.PauseTimer();  
-        this.enabled = false;
-
+        this.enabled = false; //stop player movement
+        groundCrumble.StopCrumbling();
         Invoke("LoadMainScene", 10f);  // Call LoadMainScene after 10 seconds
     }
 
