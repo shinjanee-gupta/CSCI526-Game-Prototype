@@ -406,7 +406,13 @@
         398,
         399,
         400,
-        401
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407
       ],
       "AllowUnexpectedOutput": true,
       "DebugActionIndex": 0
@@ -13675,13 +13681,13 @@
       "DebugActionIndex": 381
     },
     {
-      "Annotation": "Brotli /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.framework.js.br",
-      "Action": "\"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Brotli/macos/brotli\" -o \"/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.framework.js.br\" -i \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js\" --comment \"UnityWeb Compressed Content (brotli)\"",
+      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
+      "Action": "\"/Applications/Unity/Hub/Editor/2021.3.29f1/Unity.app/Contents/Tools/7za\" a -tgzip \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked\" \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js\"",
       "Inputs": [
         "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js"
       ],
       "Outputs": [
-        "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.framework.js.br"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked"
       ],
       "ToBuildDependencies": [
         381
@@ -13691,20 +13697,90 @@
       "DebugActionIndex": 382
     },
     {
-      "Annotation": "Brotli /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.wasm.br",
-      "Action": "\"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Brotli/macos/brotli\" -o \"/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.wasm.br\" -i \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm\" --comment \"UnityWeb Compressed Content (brotli)\"",
+      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/WebGLBuild.framework.js.gz_sofg.info",
+      "ActionType": "WriteTextFile",
+      "WriteTextFilePayload": "{\"System.Object\":null,\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"WebGLPlayerBuildProgram.GzipMarker\",\"methodName\":\"Run\",\"assemblyLocation\":\"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe\",\"targets\":[\"/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.framework.js.gz\"],\"inputs\":[\"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked\"],\"targetDirectories\":[]}}",
+      "Inputs": [],
+      "Outputs": [
+        "Library/Bee/artifacts/csharpactions/WebGLBuild.framework.js.gz_sofg.info"
+      ],
+      "AllowUnwrittenOutputFiles": true,
+      "DebugActionIndex": 383
+    },
+    {
+      "Annotation": "GzipMarker /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.framework.js.gz",
+      "Action": "\"/Applications/Unity/Hub/Editor/2021.3.29f1/Unity.app/Contents/Tools/netcorerun/netcorerun\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/Bee:/Applications/Unity/Hub/Editor/2021.3.29f1/Unity.app/Contents/Tools/BuildPipeline\" invoke_static_method \"Library/Bee/artifacts/csharpactions/WebGLBuild.framework.js.gz_sofg.info\"",
+      "Inputs": [
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
+        "Library/Bee/artifacts/csharpactions/WebGLBuild.framework.js.gz_sofg.info",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/modules.asset",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.pdb",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.pdb",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
+      ],
+      "Outputs": [
+        "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.framework.js.gz"
+      ],
+      "ToBuildDependencies": [
+        382,
+        383
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 384
+    },
+    {
+      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
+      "Action": "\"/Applications/Unity/Hub/Editor/2021.3.29f1/Unity.app/Contents/Tools/7za\" a -tgzip \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked\" \"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm\"",
       "Inputs": [
         "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm"
       ],
       "Outputs": [
-        "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.wasm.br"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked"
       ],
       "ToBuildDependencies": [
         379
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 383
+      "DebugActionIndex": 385
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/WebGLBuild.wasm.gz_99xn.info",
+      "ActionType": "WriteTextFile",
+      "WriteTextFilePayload": "{\"System.Object\":null,\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"WebGLPlayerBuildProgram.GzipMarker\",\"methodName\":\"Run\",\"assemblyLocation\":\"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe\",\"targets\":[\"/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.wasm.gz\"],\"inputs\":[\"Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked\"],\"targetDirectories\":[]}}",
+      "Inputs": [],
+      "Outputs": [
+        "Library/Bee/artifacts/csharpactions/WebGLBuild.wasm.gz_99xn.info"
+      ],
+      "AllowUnwrittenOutputFiles": true,
+      "DebugActionIndex": 386
+    },
+    {
+      "Annotation": "GzipMarker /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.wasm.gz",
+      "Action": "\"/Applications/Unity/Hub/Editor/2021.3.29f1/Unity.app/Contents/Tools/netcorerun/netcorerun\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/Bee:/Applications/Unity/Hub/Editor/2021.3.29f1/Unity.app/Contents/Tools/BuildPipeline\" invoke_static_method \"Library/Bee/artifacts/csharpactions/WebGLBuild.wasm.gz_99xn.info\"",
+      "Inputs": [
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
+        "Library/Bee/artifacts/csharpactions/WebGLBuild.wasm.gz_99xn.info",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/modules.asset",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.pdb",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.pdb",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
+      ],
+      "Outputs": [
+        "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.wasm.gz"
+      ],
+      "ToBuildDependencies": [
+        385,
+        386
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 387
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/UnityLinkerToEditorData.json",
@@ -13718,7 +13794,7 @@
       "ToBuildDependencies": [
         1
       ],
-      "DebugActionIndex": 384
+      "DebugActionIndex": 388
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/MethodMap.tsv",
@@ -13732,7 +13808,7 @@
       "ToBuildDependencies": [
         2
       ],
-      "DebugActionIndex": 385
+      "DebugActionIndex": 389
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info",
@@ -13743,7 +13819,7 @@
         "Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info"
       ],
       "AllowUnwrittenOutputFiles": true,
-      "DebugActionIndex": 386
+      "DebugActionIndex": 390
     },
     {
       "Annotation": "Assemble WebGL Data Library/Bee/artifacts/WebGL/webgl.data",
@@ -13769,31 +13845,66 @@
       ],
       "ToBuildDependencies": [
         2,
-        386
+        390
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 387
+      "DebugActionIndex": 391
     },
     {
-      "Annotation": "Brotli /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.data.br",
-      "Action": "\"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Brotli/macos/brotli\" -o \"/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.data.br\" -i \"Library/Bee/artifacts/WebGL/webgl.data\" --comment \"UnityWeb Compressed Content (brotli)\"",
+      "Annotation": "7z Library/Bee/artifacts/WebGL/webgl.data.unmarked",
+      "Action": "\"/Applications/Unity/Hub/Editor/2021.3.29f1/Unity.app/Contents/Tools/7za\" a -tgzip \"Library/Bee/artifacts/WebGL/webgl.data.unmarked\" \"Library/Bee/artifacts/WebGL/webgl.data\"",
       "Inputs": [
         "Library/Bee/artifacts/WebGL/webgl.data"
       ],
       "Outputs": [
-        "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.data.br"
+        "Library/Bee/artifacts/WebGL/webgl.data.unmarked"
       ],
       "ToBuildDependencies": [
-        387
+        391
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 388
+      "DebugActionIndex": 392
+    },
+    {
+      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/WebGLBuild.data.gz_7w0s.info",
+      "ActionType": "WriteTextFile",
+      "WriteTextFilePayload": "{\"System.Object\":null,\"Bee.TundraBackend.CSharpActionInvocationInformation\":{\"typeFullName\":\"WebGLPlayerBuildProgram.GzipMarker\",\"methodName\":\"Run\",\"assemblyLocation\":\"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe\",\"targets\":[\"/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.data.gz\"],\"inputs\":[\"Library/Bee/artifacts/WebGL/webgl.data.unmarked\"],\"targetDirectories\":[]}}",
+      "Inputs": [],
+      "Outputs": [
+        "Library/Bee/artifacts/csharpactions/WebGLBuild.data.gz_7w0s.info"
+      ],
+      "AllowUnwrittenOutputFiles": true,
+      "DebugActionIndex": 393
+    },
+    {
+      "Annotation": "GzipMarker /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.data.gz",
+      "Action": "\"/Applications/Unity/Hub/Editor/2021.3.29f1/Unity.app/Contents/Tools/netcorerun/netcorerun\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/Bee:/Applications/Unity/Hub/Editor/2021.3.29f1/Unity.app/Contents/Tools/BuildPipeline\" invoke_static_method \"Library/Bee/artifacts/csharpactions/WebGLBuild.data.gz_7w0s.info\"",
+      "Inputs": [
+        "Library/Bee/artifacts/WebGL/webgl.data.unmarked",
+        "Library/Bee/artifacts/csharpactions/WebGLBuild.data.gz_7w0s.info",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/modules.asset",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.pdb",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.pdb",
+        "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
+      ],
+      "Outputs": [
+        "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.data.gz"
+      ],
+      "ToBuildDependencies": [
+        392,
+        393
+      ],
+      "AllowUnexpectedOutput": true,
+      "Env": [],
+      "DebugActionIndex": 394
     },
     {
       "Annotation": "PreprocessJS /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.loader.js",
-      "Action": "cd \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='/Users/shinjaneegupta/Documents/GitHub/CSCI526\\x2dGame\\x2dPrototype/WebGLBuild/Build/WebGLBuild.loader.js'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Prototype'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGLBuild.data.br'\" \"FRAMEWORK_FILENAME='WebGLBuild.framework.js.br'\" \"CODE_FILENAME='WebGLBuild.wasm.br'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.29f1'\" \"LOADER_FILENAME='WebGLBuild.loader.js'\"",
+      "Action": "cd \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='/Users/shinjaneegupta/Documents/GitHub/CSCI526\\x2dGame\\x2dPrototype/WebGLBuild/Build/WebGLBuild.loader.js'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Prototype'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGLBuild.data.gz'\" \"FRAMEWORK_FILENAME='WebGLBuild.framework.js.gz'\" \"CODE_FILENAME='WebGLBuild.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.29f1'\" \"LOADER_FILENAME='WebGLBuild.loader.js'\"",
       "Inputs": [
         "UnityLoader/UnityLoader.js"
       ],
@@ -13801,11 +13912,11 @@
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/Build/WebGLBuild.loader.js"
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 389
+      "DebugActionIndex": 395
     },
     {
       "Annotation": "PreprocessJS /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/index.html",
-      "Action": "cd \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='/Users/shinjaneegupta/Documents/GitHub/CSCI526\\x2dGame\\x2dPrototype/WebGLBuild/index.html'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Prototype'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGLBuild.data.br'\" \"FRAMEWORK_FILENAME='WebGLBuild.framework.js.br'\" \"CODE_FILENAME='WebGLBuild.wasm.br'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.29f1'\" \"LOADER_FILENAME='WebGLBuild.loader.js'\"",
+      "Action": "cd \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html'\"  \"locals.outputPath='/Users/shinjaneegupta/Documents/GitHub/CSCI526\\x2dGame\\x2dPrototype/WebGLBuild/index.html'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Prototype'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGLBuild.data.gz'\" \"FRAMEWORK_FILENAME='WebGLBuild.framework.js.gz'\" \"CODE_FILENAME='WebGLBuild.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.29f1'\" \"LOADER_FILENAME='WebGLBuild.loader.js'\"",
       "Inputs": [
         "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/index.html"
       ],
@@ -13813,7 +13924,7 @@
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/index.html"
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 390
+      "DebugActionIndex": 396
     },
     {
       "Annotation": "CopyFiles /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/fullscreen-button.png",
@@ -13824,7 +13935,7 @@
       "Outputs": [
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/fullscreen-button.png"
       ],
-      "DebugActionIndex": 391
+      "DebugActionIndex": 397
     },
     {
       "Annotation": "CopyFiles /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/unity-logo-dark.png",
@@ -13835,7 +13946,7 @@
       "Outputs": [
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/unity-logo-dark.png"
       ],
-      "DebugActionIndex": 392
+      "DebugActionIndex": 398
     },
     {
       "Annotation": "CopyFiles /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/favicon.ico",
@@ -13846,7 +13957,7 @@
       "Outputs": [
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/favicon.ico"
       ],
-      "DebugActionIndex": 393
+      "DebugActionIndex": 399
     },
     {
       "Annotation": "CopyFiles /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/progress-bar-empty-light.png",
@@ -13857,7 +13968,7 @@
       "Outputs": [
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/progress-bar-empty-light.png"
       ],
-      "DebugActionIndex": 394
+      "DebugActionIndex": 400
     },
     {
       "Annotation": "CopyFiles /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/webgl-logo.png",
@@ -13868,11 +13979,11 @@
       "Outputs": [
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/webgl-logo.png"
       ],
-      "DebugActionIndex": 395
+      "DebugActionIndex": 401
     },
     {
       "Annotation": "PreprocessJS /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/style.css",
-      "Action": "cd \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='/Users/shinjaneegupta/Documents/GitHub/CSCI526\\x2dGame\\x2dPrototype/WebGLBuild/TemplateData/style.css'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Prototype'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGLBuild.data.br'\" \"FRAMEWORK_FILENAME='WebGLBuild.framework.js.br'\" \"CODE_FILENAME='WebGLBuild.wasm.br'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.29f1'\" \"LOADER_FILENAME='WebGLBuild.loader.js'\"",
+      "Action": "cd \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools\" && \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node\" \"/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css'\"  \"locals.outputPath='/Users/shinjaneegupta/Documents/GitHub/CSCI526\\x2dGame\\x2dPrototype/WebGLBuild/TemplateData/style.css'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='DefaultCompany'\" \"PRODUCT_NAME='Prototype'\" \"PRODUCT_VERSION='1.0'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='WebGLBuild.data.gz'\" \"FRAMEWORK_FILENAME='WebGLBuild.framework.js.gz'\" \"CODE_FILENAME='WebGLBuild.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=true\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"TOTAL_MEMORY=33554432\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2021.3.29f1'\" \"LOADER_FILENAME='WebGLBuild.loader.js'\"",
       "Inputs": [
         "/Applications/Unity/Hub/Editor/2021.3.29f1/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/Default/TemplateData/style.css"
       ],
@@ -13880,7 +13991,7 @@
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/style.css"
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 396
+      "DebugActionIndex": 402
     },
     {
       "Annotation": "CopyFiles /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/progress-bar-full-dark.png",
@@ -13891,7 +14002,7 @@
       "Outputs": [
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/progress-bar-full-dark.png"
       ],
-      "DebugActionIndex": 397
+      "DebugActionIndex": 403
     },
     {
       "Annotation": "CopyFiles /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/progress-bar-full-light.png",
@@ -13902,7 +14013,7 @@
       "Outputs": [
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/progress-bar-full-light.png"
       ],
-      "DebugActionIndex": 398
+      "DebugActionIndex": 404
     },
     {
       "Annotation": "CopyFiles /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/progress-bar-empty-dark.png",
@@ -13913,7 +14024,7 @@
       "Outputs": [
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/progress-bar-empty-dark.png"
       ],
-      "DebugActionIndex": 399
+      "DebugActionIndex": 405
     },
     {
       "Annotation": "CopyFiles /Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/unity-logo-light.png",
@@ -13924,7 +14035,7 @@
       "Outputs": [
         "/Users/shinjaneegupta/Documents/GitHub/CSCI526-Game-Prototype/WebGLBuild/TemplateData/unity-logo-light.png"
       ],
-      "DebugActionIndex": 400
+      "DebugActionIndex": 406
     },
     {
       "Annotation": "Player",
@@ -13934,26 +14045,26 @@
       "ToBuildDependencies": [
         1,
         375,
-        382,
-        383,
         384,
-        385,
+        387,
         388,
         389,
-        390,
-        391,
-        392,
-        393,
         394,
         395,
         396,
         397,
         398,
         399,
-        400
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406
       ],
       "AllowUnexpectedOutput": true,
-      "DebugActionIndex": 401
+      "DebugActionIndex": 407
     }
   ],
   "FileSignatures": [
@@ -14323,7 +14434,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 401
+          "Player": 407
         }
 ,  "DefaultNodes": [
     0
