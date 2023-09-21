@@ -3,8 +3,8 @@
     {
       "type": "il2cppData",
       "msg": {
-        "build_event_id": "2373b02cff39a419aaec20d75f69812d",
-        "node_executed": true,
+        "build_event_id": "9531185bfc41c47408165d8ab147c622",
+        "node_executed": false,
         "attribute_total_count_eager_static_constructor": 8,
         "attribute_total_count_set_option": 0,
         "attribute_total_count_generate_into_own_cpp_file": 0,
@@ -40,13 +40,13 @@
     {
       "type": "playerBuildTimingData",
       "msg": {
-        "build_event_id": "2373b02cff39a419aaec20d75f69812d",
-        "build_player": 194369,
-        "preprocess_player": 10,
-        "produce_player_script_assemblies": 6550,
-        "build_scripts_dlls": 88,
-        "writing_asset_files": 2266,
-        "postprocess_built_player": 180813,
+        "build_event_id": "9531185bfc41c47408165d8ab147c622",
+        "build_player": 93199,
+        "preprocess_player": 23,
+        "produce_player_script_assemblies": 4588,
+        "build_scripts_dlls": 79,
+        "writing_asset_files": 38,
+        "postprocess_built_player": 87512,
         "node_summary_table": [
           {
             "name": "Csc",
@@ -54,91 +54,91 @@
           },
           {
             "name": "Csc",
-            "duration": 759
+            "duration": 373
           },
           {
             "name": "Csc",
-            "duration": 389
+            "duration": 437
           },
           {
             "name": "Csc",
-            "duration": 637
+            "duration": 813
           },
           {
             "name": "Csc",
-            "duration": 379
+            "duration": 246
           },
           {
             "name": "Csc",
-            "duration": 786
+            "duration": 523
           },
           {
             "name": "Csc",
-            "duration": 289
+            "duration": 1947
           },
           {
             "name": "Csc",
-            "duration": 276
+            "duration": 179
           },
           {
             "name": "Csc",
-            "duration": 853
+            "duration": 205
           },
           {
             "name": "Csc",
-            "duration": 371
+            "duration": 252
           },
           {
             "name": "Csc",
-            "duration": 441
+            "duration": 361
           },
           {
             "name": "Csc",
-            "duration": 559
+            "duration": 414
           },
           {
             "name": "Csc",
-            "duration": 446
+            "duration": 671
           },
           {
             "name": "Csc",
-            "duration": 1709
+            "duration": 244
           },
           {
             "name": "Csc",
-            "duration": 350
+            "duration": 158
           },
           {
             "name": "Csc",
-            "duration": 676
+            "duration": 743
           },
           {
             "name": "Csc",
-            "duration": 506
+            "duration": 671
           },
           {
             "name": "Csc",
-            "duration": 300
+            "duration": 1326
           },
           {
             "name": "Csc",
-            "duration": 798
+            "duration": 491
           },
           {
             "name": "Csc",
-            "duration": 1065
+            "duration": 187
           },
           {
             "name": "Csc",
-            "duration": 314
+            "duration": 457
           },
           {
             "name": "Csc",
-            "duration": 480
+            "duration": 427
           },
           {
             "name": "Csc",
-            "duration": 279
+            "duration": 411
           }
         ]
       },
@@ -147,8 +147,8 @@
     {
       "type": "unityLinkerData",
       "msg": {
-        "build_event_id": "2373b02cff39a419aaec20d75f69812d",
-        "node_executed": true,
+        "build_event_id": "9531185bfc41c47408165d8ab147c622",
+        "node_executed": false,
         "attribute_marked_count_always_link_assembly": 0,
         "attribute_swept_count_always_link_assembly": 0,
         "attribute_total_count_always_link_assembly": 0,
