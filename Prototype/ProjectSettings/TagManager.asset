@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - Weak Point
   - Last
+  - HintText
   layers:
   - Default
   - TransparentFX

@@ -4,13 +4,27 @@ using UnityEngine;
 
 public class EnemyStomp : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private TimerUI timerUI; // Reference to the TimerUI script
+    private GroundCrumble groundCrumble; // Reference to the GroundCrumble script
+
+    private void Start()
     {
-        if(collision.gameObject.tag == "Weak Point")
-        {
-            Destroy(collision.gameObject);
-        }
+        // Find and store references to the TimerUI and GroundCrumble scripts
+        timerUI = FindObjectOfType<TimerUI>();
+        groundCrumble = FindObjectOfType<GroundCrumble>();
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Weak Point"))
+        {
+            Destroy(collision.gameObject);
 
+            // Add 10 seconds to the timer
+            timerUI.AddTime(10f);
+
+            // Pause ground crumbling for 10 seconds
+            groundCrumble.PauseCrumblingForSeconds(10f);
+        }
+    }
 }

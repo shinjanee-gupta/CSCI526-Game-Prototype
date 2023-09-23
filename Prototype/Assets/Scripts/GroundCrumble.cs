@@ -6,7 +6,7 @@ public class GroundCrumble : MonoBehaviour
     private bool playerHasStarted = false;
     private const float totalTime = 40f;
     private float timePassedSinceStart = 0f;
-    private float crumbleThreshold = 2f; // start crumbling every 2 seconds
+    private float crumbleThreshold = 0.5f; // start crumbling every 2 seconds
     private bool isCrumblingPaused = false;
 
     void Update()
