@@ -87,6 +87,8 @@ public class WallManager : MonoBehaviour
         yield return new WaitForSeconds(3f);  // wait for 3 seconds
         riddleObject.SetActive(false);
         gameOverOverlay.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        gameOverOverlay.SetActive(false);
 
     }
 
