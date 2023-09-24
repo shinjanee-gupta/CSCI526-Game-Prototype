@@ -9,6 +9,7 @@ public class PlayerCollision : MonoBehaviour
     public float backwardForce = 200.0f;
     public GameObject gameOverOverlay;
     public GameObject HintText;
+    public GameObject Hint2;
     public TimerUI timerUI;
     public GroundCrumble groundCrumble;
 
@@ -51,7 +52,25 @@ public class PlayerCollision : MonoBehaviour
             // Start a new coroutine to disable HintText after 5 seconds.
             hintCoroutine = StartCoroutine(DisableHintAfterDelay(5f));
         }
+
+
+        if (collision.gameObject.CompareTag("Hint2"))
+        {
+            // Enable the HintText
+            Hint2.SetActive(true);
+
+            // If a hint coroutine is already running, stop it.
+            if (hintCoroutine != null)
+            {
+                StopCoroutine(hintCoroutine);
+            }
+
+            // Start a new coroutine to disable HintText after 5 seconds.
+            hintCoroutine = StartCoroutine(DisableHintAfterDelay(5f));
+        }
     }
+
+
 
     private IEnumerator DisableHintAfterDelay(float delay)
     {
