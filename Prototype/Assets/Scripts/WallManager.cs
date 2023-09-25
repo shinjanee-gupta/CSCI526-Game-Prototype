@@ -9,6 +9,9 @@ public class WallManager : MonoBehaviour
     public GameObject riddleObject;
     private int i = -1;
     public static int[] filledPos = {0,0,0,0};
+    public GameObject gameOverOverlay;
+    public TimerUI timerUI;
+    public GroundCrumble groundCrumble;
 
     int emptyIndex;
 
@@ -63,7 +66,6 @@ public class WallManager : MonoBehaviour
 
         if (!LetterCoding.ContainsKey(letter))
         {
-
             lastFilledIndex = System.Array.LastIndexOf(filledPos,1);
             wallObjects[lastFilledIndex+4].SetActive(false);
             filledPos[lastFilledIndex] = 0;
@@ -77,13 +79,17 @@ public class WallManager : MonoBehaviour
         if(AlphabetBlock.fixCounter == 4)
         {  
             StartCoroutine(vanishWall());
+            
         }
     }
     public IEnumerator vanishWall()
     {
         yield return new WaitForSeconds(3f);  // wait for 3 seconds
         riddleObject.SetActive(false);
-        
+        gameOverOverlay.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        gameOverOverlay.SetActive(false);
+
     }
 
 }
