@@ -21,7 +21,7 @@ public class EnemyStomp : MonoBehaviour
             Destroy(collision.gameObject);
 
             // Add 10 seconds to the timer
-            timerUI.AddTime(10f);
+            timerUI.AddTime(5f);
 
             // Pause ground crumbling for 10 seconds
             groundCrumble.PauseCrumblingForSeconds(10f);

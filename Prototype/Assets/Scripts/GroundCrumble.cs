@@ -61,16 +61,35 @@ public class GroundCrumble : MonoBehaviour
     }
 
 
+    // private GameObject GetNextGroundSegment()
+    // {
+        
+    //     // Return the first segment of the ground to be crumbled (the one at the beginning of the track)
+    //     Transform parent = this.transform;
+    //     Debug.Log("fetching Parent" + parent.childCount);
+    //     if (parent.childCount > 0)
+    //     {
+    //         return parent.GetChild(0).gameObject; 
+    //     }
+    //     return null;
+    // }
     private GameObject GetNextGroundSegment()
     {
-        // Return the first segment of the ground to be crumbled (the one at the beginning of the track)
-        Transform parent = this.transform;
-        if (parent.childCount > 0)
+        // Get the latest ground parent object dynamically
+        GroundCrumble latestGroundCrumble = GameObject.FindObjectOfType<GroundCrumble>();
+        Debug.Log("latest ground crumble Parent" + latestGroundCrumble);
+        if (latestGroundCrumble != null)
         {
-            return parent.GetChild(0).gameObject; 
+            Transform parent = latestGroundCrumble.transform;
+            Debug.Log("fetching Parent" + parent.childCount);
+            if (parent.childCount > 0)
+            {
+                return parent.GetChild(0).gameObject; 
+            }
         }
         return null;
     }
+
 
     public void StartPlayerMovement()
     {

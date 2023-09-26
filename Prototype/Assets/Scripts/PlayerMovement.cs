@@ -5,21 +5,31 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5.0f;
     public float jumpForce = 10.0f; // Jump force for player
-    public GroundCrumble groundCrumble;
+    public static GroundCrumble groundCrumble;
     private bool hasMovedForward = false;
     private bool isGrounded = true;  // Mechanism to check if player is on ground
     private Rigidbody2D rb;
     public GameObject endGameOverlay;
     public TimerUI timerUI; 
 
+    public GameObject gameOverOverlay;
+
+    private float yValue;
+
+    //public static parentGroundObject="GroundParent";
+
+    public static bool scenechanged = false;
+
     private void Start() 
     {
         rb = GetComponent<Rigidbody2D>();
         groundCrumble = GameObject.Find("GroundParent").GetComponent<GroundCrumble>();
+        yValue   = 1.4f;
     }
 
     private void Update()
     {
+        
         float move = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(move * speed, rb.velocity.y);
 
@@ -29,13 +39,23 @@ public class PlayerMovement : MonoBehaviour
             hasMovedForward = true;
             groundCrumble.StartPlayerMovement();
         }
-
         // Jump with space bar when the player is grounded
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false;
         }
+        
+        if(transform.position.y < yValue)
+        {
+            gameOverOverlay.SetActive(true);
+            timerUI.PauseTimer();  
+            this.enabled = false; //stop player movement
+            groundCrumble.StopCrumbling();
+            Invoke("LoadMainScene", 5f);
+        }
+
+
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -46,17 +66,18 @@ public class PlayerMovement : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Last"))
         {
+            Debug.Log("Last tag called");
             ShowEndGameOverlay();
         }
     }
 
-    private void ShowEndGameOverlay()
+    public void ShowEndGameOverlay()
     {
         endGameOverlay.SetActive(true);  // Show the overlay
         timerUI.PauseTimer();  
         this.enabled = false; //stop player movement
         groundCrumble.StopCrumbling();
-        Invoke("LoadMainScene", 10f);  // Call LoadMainScene after 10 seconds
+        Invoke("LoadMainScene", 5f);  // Call LoadMainScene after 10 seconds
     }
 
     private void LoadMainScene()
