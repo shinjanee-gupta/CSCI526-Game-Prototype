@@ -1,28 +1,34 @@
 using UnityEngine;
 using TMPro;
-using System.Collections;
+using UnityEngine.SceneManagement;
+
 
 public class TimerUI : MonoBehaviour
 {
     public float timeLeft = 40f;
     private bool isPaused = false;
-    private bool isTimeFrozen = false;
-    private float originalTimeScale;
+    private bool isGameOver = false; // Add this variable to track if the game is over
+
+    public GameObject gameOverOverlay; // Reference to your game over overlay GameObject
 
     private TextMeshProUGUI timerText;
 
     private void Start()
     {
         timerText = GetComponent<TextMeshProUGUI>();
-        originalTimeScale = Time.timeScale;
     }
 
     private void Update()
     {
-        if (!isTimeFrozen && !isPaused && timeLeft > 0)
+        if (!isPaused && timeLeft > 0)
         {
             timeLeft -= Time.deltaTime;
             UpdateTimerDisplay();
+        }
+        else if (!isGameOver) // Check if the game is not already over
+        {
+            // Timer has ended, call the game over function
+            GameOver();
         }
     }
 
@@ -43,20 +49,17 @@ public class TimerUI : MonoBehaviour
         timeLeft += secondsToAdd;
     }
 
-    public void FreezeTime(float freezeDuration)
+    private void GameOver()
     {
-        if (!isTimeFrozen)
-        {
-            isTimeFrozen = true;
-            Time.timeScale = 0f; // Freeze time
-            StartCoroutine(UnfreezeTimeAfterDelay(freezeDuration));
-        }
-    }
+        // Set the game over state
+        isGameOver = true;
 
-    private IEnumerator UnfreezeTimeAfterDelay(float delay)
+        // Activate the game over overlay
+        gameOverOverlay.SetActive(true);
+        Invoke("LoadMainScene", 5f);
+    }
+    private void LoadMainScene()
     {
-        yield return new WaitForSecondsRealtime(delay);
-        isTimeFrozen = false;
-        Time.timeScale = originalTimeScale; // Unfreeze time and restore the original time scale
+        SceneManager.LoadScene("MainScene");  // Replace "MainScene" with the actual name of your main scene
     }
 }

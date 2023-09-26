@@ -217,12 +217,12 @@ struct VertexHelper_tB905FCB02AE67CBEE5F265FE37A5938FC5D136FE;
 struct Void_t4861ACF8F4594C3437BB48B6E56783494B843915;
 // UnityEngine.WaitForSeconds
 struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3;
-// UnityEngine.WaitForSecondsRealtime
-struct WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01;
 // WallManagerScriptLevel1
 struct WallManagerScriptLevel1_t0F9984B4EE44E4D8BC429561796675E210BF91C1;
 // WallManagerScriptLevel2
 struct WallManagerScriptLevel2_t64BBEA04AEF9B8E4DE453FAD6795BECD31CAFB53;
+// setMaxScreenSize
+struct setMaxScreenSize_t0A06422F6F4AF01702A5F7BA726920BB4E1BD727;
 // UnityEngine.Camera/CameraCallback
 struct CameraCallback_t844E527BFE37BC0495E7F67993E43C07642DA9DD;
 // GroundCrumble/<PauseCrumblingCoroutine>d__10
@@ -231,8 +231,6 @@ struct U3CPauseCrumblingCoroutineU3Ed__10_tACF9FBAEF3369BE0C867ACC928FA5BFB4CD85
 struct CullStateChangedEvent_t6073CD0D951EC1256BF74B8F9107D68FC89B99B8;
 // PlayerCollision/<DisableHintAfterDelay>d__11
 struct U3CDisableHintAfterDelayU3Ed__11_t7DBA288C0CC278F08FC8926FEC4DF6C091E1443B;
-// TimerUI/<UnfreezeTimeAfterDelay>d__11
-struct U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0;
 // WallManagerScriptLevel1/<vanishWall>d__18
 struct U3CvanishWallU3Ed__18_t3C40CCC1466EF537BCB1CAA7DDC910D232FBFA25;
 // WallManagerScriptLevel2/<vanishWall>d__17
@@ -252,11 +250,9 @@ IL2CPP_EXTERN_C RuntimeClass* PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338
 IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CDisableHintAfterDelayU3Ed__11_t7DBA288C0CC278F08FC8926FEC4DF6C091E1443B_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CPauseCrumblingCoroutineU3Ed__10_tACF9FBAEF3369BE0C867ACC928FA5BFB4CD8513B_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CvanishWallU3Ed__17_t92872C55FE3ACEA166EE87EDE2461F0E6119DADA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* U3CvanishWallU3Ed__18_t3C40CCC1466EF537BCB1CAA7DDC910D232FBFA25_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Vector2_t1FD6F485C871E832B347AB2DC8CBA08B739D8DF7_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WallManagerScriptLevel1_t0F9984B4EE44E4D8BC429561796675E210BF91C1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* WallManagerScriptLevel2_t64BBEA04AEF9B8E4DE453FAD6795BECD31CAFB53_il2cpp_TypeInfo_var;
@@ -321,7 +317,6 @@ IL2CPP_EXTERN_C const RuntimeMethod* Object_FindObjectOfType_TisWallManagerScrip
 IL2CPP_EXTERN_C const RuntimeMethod* String_Join_TisInt32_t680FF22E76F6EFAD4375103CBBFFA0421349384C_m3954E1690A53FDAE651340E931E00877D887458C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CDisableHintAfterDelayU3Ed__11_System_Collections_IEnumerator_Reset_m39D70C5BECDAADAD9D6428E0B5DF0858B48B29A9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CPauseCrumblingCoroutineU3Ed__10_System_Collections_IEnumerator_Reset_m5BDBF34D7B00DD73281FAA887C558FE862B0704D_RuntimeMethod_var;
-IL2CPP_EXTERN_C const RuntimeMethod* U3CUnfreezeTimeAfterDelayU3Ed__11_System_Collections_IEnumerator_Reset_mA5624FF2A1E242FA6FF7476667BC93DB138224B8_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CvanishWallU3Ed__17_System_Collections_IEnumerator_Reset_m756E0485BD6D3E2A5A262F09A0CCA69F39C8B587_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* U3CvanishWallU3Ed__18_System_Collections_IEnumerator_Reset_m0FC501D0EBBC50D100DC07A12C6393011C5BD450_RuntimeMethod_var;
 struct ContactPoint2D_t16A7EE2DDFB4FA3A09C6554E11F30CEDAEBFA801;
@@ -377,11 +372,6 @@ struct AbstractEventData_tAE1A127ED657117548181D29FFE4B1B14D8E67F7  : public Run
 {
 	// System.Boolean UnityEngine.EventSystems.AbstractEventData::m_Used
 	bool ___m_Used_0;
-};
-
-// UnityEngine.CustomYieldInstruction
-struct CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617  : public RuntimeObject
-{
 };
 
 // System.String
@@ -443,19 +433,6 @@ struct U3CDisableHintAfterDelayU3Ed__11_t7DBA288C0CC278F08FC8926FEC4DF6C091E1443
 	float ___delay_2;
 	// PlayerCollision PlayerCollision/<DisableHintAfterDelay>d__11::<>4__this
 	PlayerCollision_t7BF0F4C2A506987589B3E5E8938A76977B0051B1* ___U3CU3E4__this_3;
-};
-
-// TimerUI/<UnfreezeTimeAfterDelay>d__11
-struct U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0  : public RuntimeObject
-{
-	// System.Int32 TimerUI/<UnfreezeTimeAfterDelay>d__11::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object TimerUI/<UnfreezeTimeAfterDelay>d__11::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Single TimerUI/<UnfreezeTimeAfterDelay>d__11::delay
-	float ___delay_2;
-	// TimerUI TimerUI/<UnfreezeTimeAfterDelay>d__11::<>4__this
-	TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* ___U3CU3E4__this_3;
 };
 
 // WallManagerScriptLevel1/<vanishWall>d__18
@@ -893,15 +870,6 @@ struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_pinvok
 struct WaitForSeconds_tF179DF251655B8DF044952E70A60DF4B358A3DD3_marshaled_com : public YieldInstruction_tFCE35FD0907950EFEE9BC2890AC664E41C53728D_marshaled_com
 {
 	float ___m_Seconds_0;
-};
-
-// UnityEngine.WaitForSecondsRealtime
-struct WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01  : public CustomYieldInstruction_t6B81A50D5D210C1ACAAE247FB53B65CDFFEB7617
-{
-	// System.Single UnityEngine.WaitForSecondsRealtime::<waitTime>k__BackingField
-	float ___U3CwaitTimeU3Ek__BackingField_0;
-	// System.Single UnityEngine.WaitForSecondsRealtime::m_WaitUntilTime
-	float ___m_WaitUntilTime_1;
 };
 
 // TMPro.TMP_Text/SpecialCharacter
@@ -1918,10 +1886,10 @@ struct TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D  : public MonoBehaviour
 	float ___timeLeft_4;
 	// System.Boolean TimerUI::isPaused
 	bool ___isPaused_5;
-	// System.Boolean TimerUI::isTimeFrozen
-	bool ___isTimeFrozen_6;
-	// System.Single TimerUI::originalTimeScale
-	float ___originalTimeScale_7;
+	// System.Boolean TimerUI::isGameOver
+	bool ___isGameOver_6;
+	// UnityEngine.GameObject TimerUI::gameOverOverlay
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameOverOverlay_7;
 	// TMPro.TextMeshProUGUI TimerUI::timerText
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___timerText_8;
 };
@@ -1996,6 +1964,11 @@ struct WallManagerScriptLevel2_t64BBEA04AEF9B8E4DE453FAD6795BECD31CAFB53  : publ
 	int32_t ___lastFilledIndex_14;
 	// System.Collections.Generic.Dictionary`2<System.Char,System.Int32> WallManagerScriptLevel2::LetterCoding
 	Dictionary_2_t63C09FF55518C7D6184D63646025DC0B7B1785D0* ___LetterCoding_15;
+};
+
+// setMaxScreenSize
+struct setMaxScreenSize_t0A06422F6F4AF01702A5F7BA726920BB4E1BD727  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
 };
 
 // UnityEngine.UI.Graphic
@@ -2553,10 +2526,6 @@ struct String_t_StaticFields
 
 // PlayerCollision/<DisableHintAfterDelay>d__11
 
-// TimerUI/<UnfreezeTimeAfterDelay>d__11
-
-// TimerUI/<UnfreezeTimeAfterDelay>d__11
-
 // WallManagerScriptLevel1/<vanishWall>d__18
 
 // WallManagerScriptLevel1/<vanishWall>d__18
@@ -2654,10 +2623,6 @@ struct Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2_StaticFields
 // UnityEngine.WaitForSeconds
 
 // UnityEngine.WaitForSeconds
-
-// UnityEngine.WaitForSecondsRealtime
-
-// UnityEngine.WaitForSecondsRealtime
 
 // UnityEngine.Bounds
 
@@ -2817,6 +2782,10 @@ struct WallManagerScriptLevel2_t64BBEA04AEF9B8E4DE453FAD6795BECD31CAFB53_StaticF
 };
 
 // WallManagerScriptLevel2
+
+// setMaxScreenSize
+
+// setMaxScreenSize
 
 // TMPro.TMP_Text
 struct TMP_Text_tE8D677872D43AD4B2AAF0D6101692A17D0B251A9_StaticFields
@@ -3281,22 +3250,14 @@ inline TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* Component_GetC
 {
 	return ((  TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* (*) (Component_t39FBE53E5EFCF4409111FB22C15FF73717632EC3*, const RuntimeMethod*))Component_GetComponent_TisRuntimeObject_m7181F81CAEC2CF53F5D2BC79B7425C16E1F80D33_gshared)(__this, method);
 }
-// System.Single UnityEngine.Time::get_timeScale()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Time_get_timeScale_m1F45A413D4EEA08B1E0988022512C137F6C1E616 (const RuntimeMethod* method) ;
 // System.Void TimerUI::UpdateTimerDisplay()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerUI_UpdateTimerDisplay_m1D447B5706594A2D4241E073C263439C87FF6659 (TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* __this, const RuntimeMethod* method) ;
+// System.Void TimerUI::GameOver()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerUI_GameOver_m732A31F2A5035BBD6E8F2A261DC3171254A654FB (TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* __this, const RuntimeMethod* method) ;
 // System.String System.Int32::ToString(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Int32_ToString_m967AECC237535C552A97A80C7875E31B98496CA9 (int32_t* __this, String_t* ___0_format, const RuntimeMethod* method) ;
 // System.String System.String::Concat(System.String,System.String,System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B (String_t* ___0_str0, String_t* ___1_str1, String_t* ___2_str2, const RuntimeMethod* method) ;
-// System.Void UnityEngine.Time::set_timeScale(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331 (float ___0_value, const RuntimeMethod* method) ;
-// System.Collections.IEnumerator TimerUI::UnfreezeTimeAfterDelay(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TimerUI_UnfreezeTimeAfterDelay_m8BE4D299CB173C0F0628CEFAD0E6430A4CA4C7AD (TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* __this, float ___0_delay, const RuntimeMethod* method) ;
-// System.Void TimerUI/<UnfreezeTimeAfterDelay>d__11::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUnfreezeTimeAfterDelayU3Ed__11__ctor_m017ABF65EA7A86E973DD781B9DE73F442669E4C0 (U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) ;
-// System.Void UnityEngine.WaitForSecondsRealtime::.ctor(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void WaitForSecondsRealtime__ctor_mBFC1E4F0E042D5EC6E7EEB211A2FE5193A8F6D6F (WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01* __this, float ___0_time, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Camera::get_orthographicSize()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR float Camera_get_orthographicSize_m7950C5627086253E02992A43ADFE59039DB473F8 (Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184* __this, const RuntimeMethod* method) ;
 // System.Single UnityEngine.Camera::get_aspect()
@@ -5661,6 +5622,38 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void PlayerMovement__ctor_mB37559C5B063816187
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
 #pragma clang diagnostic ignored "-Wunused-variable"
 #endif
+// System.Void setMaxScreenSize::Start()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void setMaxScreenSize_Start_mF9198CAF4A8107C38542EE237B0818510F359137 (setMaxScreenSize_t0A06422F6F4AF01702A5F7BA726920BB4E1BD727* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void setMaxScreenSize::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void setMaxScreenSize_Update_m38285D9710D5B8CFFB7309824C77932E666F2EFA (setMaxScreenSize_t0A06422F6F4AF01702A5F7BA726920BB4E1BD727* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void setMaxScreenSize::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void setMaxScreenSize__ctor_m1F82297498A34705519BC60D7CC7F839BF7D6C31 (setMaxScreenSize_t0A06422F6F4AF01702A5F7BA726920BB4E1BD727* __this, const RuntimeMethod* method) 
+{
+	{
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
 // System.Void TimerUI::Start()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerUI_Start_m45633BA52DE1E402BAE09123B777C4BDE3B84B2A (TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* __this, const RuntimeMethod* method) 
 {
@@ -5676,10 +5669,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerUI_Start_m45633BA52DE1E402BAE09123B
 		L_0 = Component_GetComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m23F8F2F9DD5A54329CEB47D53B4CAA8BC4A562AA(__this, Component_GetComponent_TisTextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957_m23F8F2F9DD5A54329CEB47D53B4CAA8BC4A562AA_RuntimeMethod_var);
 		__this->___timerText_8 = L_0;
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___timerText_8), (void*)L_0);
-		// originalTimeScale = Time.timeScale;
-		float L_1;
-		L_1 = Time_get_timeScale_m1F45A413D4EEA08B1E0988022512C137F6C1E616(NULL);
-		__this->___originalTimeScale_7 = L_1;
 		// }
 		return;
 	}
@@ -5688,38 +5677,46 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerUI_Start_m45633BA52DE1E402BAE09123B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerUI_Update_m24FB147BCD6FEE8597DE38EDD998BF5E13FC4FE9 (TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* __this, const RuntimeMethod* method) 
 {
 	{
-		// if (!isTimeFrozen && !isPaused && timeLeft > 0)
-		bool L_0 = __this->___isTimeFrozen_6;
+		// if (!isPaused && timeLeft > 0)
+		bool L_0 = __this->___isPaused_5;
 		if (L_0)
 		{
-			goto IL_0035;
+			goto IL_002e;
 		}
 	}
 	{
-		bool L_1 = __this->___isPaused_5;
-		if (L_1)
+		float L_1 = __this->___timeLeft_4;
+		if ((!(((float)L_1) > ((float)(0.0f)))))
 		{
-			goto IL_0035;
-		}
-	}
-	{
-		float L_2 = __this->___timeLeft_4;
-		if ((!(((float)L_2) > ((float)(0.0f)))))
-		{
-			goto IL_0035;
+			goto IL_002e;
 		}
 	}
 	{
 		// timeLeft -= Time.deltaTime;
-		float L_3 = __this->___timeLeft_4;
-		float L_4;
-		L_4 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
-		__this->___timeLeft_4 = ((float)il2cpp_codegen_subtract(L_3, L_4));
+		float L_2 = __this->___timeLeft_4;
+		float L_3;
+		L_3 = Time_get_deltaTime_mC3195000401F0FD167DD2F948FD2BC58330D0865(NULL);
+		__this->___timeLeft_4 = ((float)il2cpp_codegen_subtract(L_2, L_3));
 		// UpdateTimerDisplay();
 		TimerUI_UpdateTimerDisplay_m1D447B5706594A2D4241E073C263439C87FF6659(__this, NULL);
+		return;
 	}
 
-IL_0035:
+IL_002e:
+	{
+		// else if (!isGameOver) // Check if the game is not already over
+		bool L_4 = __this->___isGameOver_6;
+		if (L_4)
+		{
+			goto IL_003c;
+		}
+	}
+	{
+		// GameOver();
+		TimerUI_GameOver_m732A31F2A5035BBD6E8F2A261DC3171254A654FB(__this, NULL);
+	}
+
+IL_003c:
 	{
 		// }
 		return;
@@ -5779,55 +5776,43 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerUI_AddTime_mD2B1B956C7099588FC768FF
 		return;
 	}
 }
-// System.Void TimerUI::FreezeTime(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerUI_FreezeTime_m53CC07E8C5F7BD78D8F274E1363A6A224ECD547B (TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* __this, float ___0_freezeDuration, const RuntimeMethod* method) 
-{
-	{
-		// if (!isTimeFrozen)
-		bool L_0 = __this->___isTimeFrozen_6;
-		if (L_0)
-		{
-			goto IL_0027;
-		}
-	}
-	{
-		// isTimeFrozen = true;
-		__this->___isTimeFrozen_6 = (bool)1;
-		// Time.timeScale = 0f; // Freeze time
-		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331((0.0f), NULL);
-		// StartCoroutine(UnfreezeTimeAfterDelay(freezeDuration));
-		float L_1 = ___0_freezeDuration;
-		RuntimeObject* L_2;
-		L_2 = TimerUI_UnfreezeTimeAfterDelay_m8BE4D299CB173C0F0628CEFAD0E6430A4CA4C7AD(__this, L_1, NULL);
-		Coroutine_t85EA685566A254C23F3FD77AB5BDFFFF8799596B* L_3;
-		L_3 = MonoBehaviour_StartCoroutine_m4CAFF732AA28CD3BDC5363B44A863575530EC812(__this, L_2, NULL);
-	}
-
-IL_0027:
-	{
-		// }
-		return;
-	}
-}
-// System.Collections.IEnumerator TimerUI::UnfreezeTimeAfterDelay(System.Single)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* TimerUI_UnfreezeTimeAfterDelay_m8BE4D299CB173C0F0628CEFAD0E6430A4CA4C7AD (TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* __this, float ___0_delay, const RuntimeMethod* method) 
+// System.Void TimerUI::GameOver()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerUI_GameOver_m732A31F2A5035BBD6E8F2A261DC3171254A654FB (TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* __this, const RuntimeMethod* method) 
 {
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral119BA87CEAFE852C5E6220AA771C51B2A25FFB2D);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0* L_0 = (U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0*)il2cpp_codegen_object_new(U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0_il2cpp_TypeInfo_var);
-		U3CUnfreezeTimeAfterDelayU3Ed__11__ctor_m017ABF65EA7A86E973DD781B9DE73F442669E4C0(L_0, 0, NULL);
-		U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0* L_1 = L_0;
-		L_1->___U3CU3E4__this_3 = __this;
-		Il2CppCodeGenWriteBarrier((void**)(&L_1->___U3CU3E4__this_3), (void*)__this);
-		U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0* L_2 = L_1;
-		float L_3 = ___0_delay;
-		L_2->___delay_2 = L_3;
-		return L_2;
+		// isGameOver = true;
+		__this->___isGameOver_6 = (bool)1;
+		// gameOverOverlay.SetActive(true);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___gameOverOverlay_7;
+		GameObject_SetActive_m638E92E1E75E519E5B24CF150B08CA8E0CDFAB92(L_0, (bool)1, NULL);
+		// Invoke("LoadMainScene", 5f);
+		MonoBehaviour_Invoke_mF724350C59362B0F1BFE26383209A274A29A63FB(__this, _stringLiteral119BA87CEAFE852C5E6220AA771C51B2A25FFB2D, (5.0f), NULL);
+		// }
+		return;
+	}
+}
+// System.Void TimerUI::LoadMainScene()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerUI_LoadMainScene_m820F1BC4C5A7ADE56CCEC20D71A49230331F7D91 (TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral884820433266E121D9AF505AF4DE98B3BA081DC8);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// SceneManager.LoadScene("MainScene");  // Replace "MainScene" with the actual name of your main scene
+		il2cpp_codegen_runtime_class_init_inline(SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var);
+		SceneManager_LoadScene_mBB3DBC1601A21F8F4E8A5D68FED30EA9412F218E(_stringLiteral884820433266E121D9AF505AF4DE98B3BA081DC8, NULL);
+		// }
+		return;
 	}
 }
 // System.Void TimerUI::.ctor()
@@ -5838,116 +5823,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TimerUI__ctor_m46044F81D2705A1C99BCD3855
 		__this->___timeLeft_4 = (40.0f);
 		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
 		return;
-	}
-}
-#ifdef __clang__
-#pragma clang diagnostic pop
-#endif
-#ifdef __clang__
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Winvalid-offsetof"
-#pragma clang diagnostic ignored "-Wunused-variable"
-#endif
-// System.Void TimerUI/<UnfreezeTimeAfterDelay>d__11::.ctor(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUnfreezeTimeAfterDelayU3Ed__11__ctor_m017ABF65EA7A86E973DD781B9DE73F442669E4C0 (U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0* __this, int32_t ___0_U3CU3E1__state, const RuntimeMethod* method) 
-{
-	{
-		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
-		int32_t L_0 = ___0_U3CU3E1__state;
-		__this->___U3CU3E1__state_0 = L_0;
-		return;
-	}
-}
-// System.Void TimerUI/<UnfreezeTimeAfterDelay>d__11::System.IDisposable.Dispose()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUnfreezeTimeAfterDelayU3Ed__11_System_IDisposable_Dispose_m719867A4A0E1939AA0C30D7B0E99714BA54F6D72 (U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0* __this, const RuntimeMethod* method) 
-{
-	{
-		return;
-	}
-}
-// System.Boolean TimerUI/<UnfreezeTimeAfterDelay>d__11::MoveNext()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool U3CUnfreezeTimeAfterDelayU3Ed__11_MoveNext_m03EBA042F0F4D1E0B383FB3C88CDC47B034139C7 (U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0* __this, const RuntimeMethod* method) 
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	int32_t V_0 = 0;
-	TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* V_1 = NULL;
-	{
-		int32_t L_0 = __this->___U3CU3E1__state_0;
-		V_0 = L_0;
-		TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* L_1 = __this->___U3CU3E4__this_3;
-		V_1 = L_1;
-		int32_t L_2 = V_0;
-		if (!L_2)
-		{
-			goto IL_0017;
-		}
-	}
-	{
-		int32_t L_3 = V_0;
-		if ((((int32_t)L_3) == ((int32_t)1)))
-		{
-			goto IL_0038;
-		}
-	}
-	{
-		return (bool)0;
-	}
-
-IL_0017:
-	{
-		__this->___U3CU3E1__state_0 = (-1);
-		// yield return new WaitForSecondsRealtime(delay);
-		float L_4 = __this->___delay_2;
-		WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01* L_5 = (WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01*)il2cpp_codegen_object_new(WaitForSecondsRealtime_tA8CE0AAB4B0C872B843E7973637037D17682BA01_il2cpp_TypeInfo_var);
-		WaitForSecondsRealtime__ctor_mBFC1E4F0E042D5EC6E7EEB211A2FE5193A8F6D6F(L_5, L_4, NULL);
-		__this->___U3CU3E2__current_1 = L_5;
-		Il2CppCodeGenWriteBarrier((void**)(&__this->___U3CU3E2__current_1), (void*)L_5);
-		__this->___U3CU3E1__state_0 = 1;
-		return (bool)1;
-	}
-
-IL_0038:
-	{
-		__this->___U3CU3E1__state_0 = (-1);
-		// isTimeFrozen = false;
-		TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* L_6 = V_1;
-		L_6->___isTimeFrozen_6 = (bool)0;
-		// Time.timeScale = originalTimeScale; // Unfreeze time and restore the original time scale
-		TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* L_7 = V_1;
-		float L_8 = L_7->___originalTimeScale_7;
-		Time_set_timeScale_mEF84EE4B2376A458387648079B426B267862D331(L_8, NULL);
-		// }
-		return (bool)0;
-	}
-}
-// System.Object TimerUI/<UnfreezeTimeAfterDelay>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CUnfreezeTimeAfterDelayU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m71E93F360A6EDDF4709EAF91F4B269C7F4B6FAD4 (U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
-		return L_0;
-	}
-}
-// System.Void TimerUI/<UnfreezeTimeAfterDelay>d__11::System.Collections.IEnumerator.Reset()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CUnfreezeTimeAfterDelayU3Ed__11_System_Collections_IEnumerator_Reset_mA5624FF2A1E242FA6FF7476667BC93DB138224B8 (U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0* __this, const RuntimeMethod* method) 
-{
-	{
-		NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A* L_0 = (NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&NotSupportedException_t1429765983D409BD2986508963C98D214E4EBF4A_il2cpp_TypeInfo_var)));
-		NotSupportedException__ctor_m1398D0CDE19B36AA3DE9392879738C1EA2439CDF(L_0, NULL);
-		IL2CPP_RAISE_MANAGED_EXCEPTION(L_0, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&U3CUnfreezeTimeAfterDelayU3Ed__11_System_Collections_IEnumerator_Reset_mA5624FF2A1E242FA6FF7476667BC93DB138224B8_RuntimeMethod_var)));
-	}
-}
-// System.Object TimerUI/<UnfreezeTimeAfterDelay>d__11::System.Collections.IEnumerator.get_Current()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* U3CUnfreezeTimeAfterDelayU3Ed__11_System_Collections_IEnumerator_get_Current_m25FD3FD5FF1052A44A1B25EE6AA3AA2134CF4716 (U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0* __this, const RuntimeMethod* method) 
-{
-	{
-		RuntimeObject* L_0 = __this->___U3CU3E2__current_1;
-		return L_0;
 	}
 }
 #ifdef __clang__

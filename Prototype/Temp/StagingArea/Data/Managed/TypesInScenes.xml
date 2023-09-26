@@ -8,6 +8,7 @@
 		<type fullname="PlayerCollision" preserve="nothing"/>
 		<type fullname="PlayerHealth" preserve="nothing"/>
 		<type fullname="PlayerMovement" preserve="nothing"/>
+		<type fullname="setMaxScreenSize" preserve="nothing"/>
 		<type fullname="TimerUI" preserve="nothing"/>
 		<type fullname="TriggerCameraMove" preserve="nothing"/>
 		<type fullname="WallManagerScriptLevel1" preserve="nothing"/>
