@@ -1764,18 +1764,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.ObjectGUIState
 
-	//Start Registrations for type : UnityEngine.Physics
-
-		//System.Void UnityEngine.Physics::get_defaultPhysicsScene_Injected(UnityEngine.PhysicsScene&)
-		void Register_UnityEngine_Physics_get_defaultPhysicsScene_Injected();
-		Register_UnityEngine_Physics_get_defaultPhysicsScene_Injected();
-
-		//UnityEngine.RaycastHit[] UnityEngine.Physics::Internal_RaycastAll_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
-		void Register_UnityEngine_Physics_Internal_RaycastAll_Injected();
-		Register_UnityEngine_Physics_Internal_RaycastAll_Injected();
-
-	//End Registrations for type : UnityEngine.Physics
-
 	//Start Registrations for type : UnityEngine.Physics2D
 
 		//System.Boolean UnityEngine.Physics2D::get_queriesHitTriggers()
@@ -1791,22 +1779,6 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Physics2D_GetRayIntersectionAll_Internal_Injected();
 
 	//End Registrations for type : UnityEngine.Physics2D
-
-	//Start Registrations for type : UnityEngine.PhysicsScene
-
-		//System.Boolean UnityEngine.PhysicsScene::Internal_RaycastTest_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
-		void Register_UnityEngine_PhysicsScene_Internal_RaycastTest_Injected();
-		Register_UnityEngine_PhysicsScene_Internal_RaycastTest_Injected();
-
-		//System.Boolean UnityEngine.PhysicsScene::Internal_Raycast_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,System.Single,UnityEngine.RaycastHit&,System.Int32,UnityEngine.QueryTriggerInteraction)
-		void Register_UnityEngine_PhysicsScene_Internal_Raycast_Injected();
-		Register_UnityEngine_PhysicsScene_Internal_Raycast_Injected();
-
-		//System.Int32 UnityEngine.PhysicsScene::Internal_RaycastNonAlloc_Injected(UnityEngine.PhysicsScene&,UnityEngine.Ray&,UnityEngine.RaycastHit[],System.Single,System.Int32,UnityEngine.QueryTriggerInteraction)
-		void Register_UnityEngine_PhysicsScene_Internal_RaycastNonAlloc_Injected();
-		Register_UnityEngine_PhysicsScene_Internal_RaycastNonAlloc_Injected();
-
-	//End Registrations for type : UnityEngine.PhysicsScene
 
 	//Start Registrations for type : UnityEngine.PhysicsScene2D
 
@@ -2662,6 +2634,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Time_get_realtimeSinceStartup();
 		Register_UnityEngine_Time_get_realtimeSinceStartup();
 
+		//System.Single UnityEngine.Time::get_timeScale()
+		void Register_UnityEngine_Time_get_timeScale();
+		Register_UnityEngine_Time_get_timeScale();
+
 		//System.Single UnityEngine.Time::get_unscaledDeltaTime()
 		void Register_UnityEngine_Time_get_unscaledDeltaTime();
 		Register_UnityEngine_Time_get_unscaledDeltaTime();
@@ -2669,6 +2645,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Single UnityEngine.Time::get_unscaledTime()
 		void Register_UnityEngine_Time_get_unscaledTime();
 		Register_UnityEngine_Time_get_unscaledTime();
+
+		//System.Void UnityEngine.Time::set_timeScale(System.Single)
+		void Register_UnityEngine_Time_set_timeScale();
+		Register_UnityEngine_Time_set_timeScale();
 
 	//End Registrations for type : UnityEngine.Time
 
