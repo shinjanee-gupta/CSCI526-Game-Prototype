@@ -31,7 +31,7 @@ public class PlayerCollision : MonoBehaviour
             rb.AddForce(force);
 
             this.GetComponent<PlayerMovement>().enabled = false;
-
+            Debug.Log("gameoveroverlay called from player collision");
             gameOverOverlay.SetActive(true);
 
             timerUI.PauseTimer();

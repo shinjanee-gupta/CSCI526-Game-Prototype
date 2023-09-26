@@ -11730,25 +11730,25 @@ struct UpdaterArray_tF8D43D2A3598E7C17ABB5308E83FDECF1F36A449  : public RuntimeO
 	IVisualTreeUpdaterU5BU5D_t9E9D948BC4F327DA519FEB2BCEC12FB7FD7C59E8* ___m_VisualTreeUpdaters_0;
 };
 
-// WallManagerScriptLevel1/<vanishWall>d__18
-struct U3CvanishWallU3Ed__18_t3C40CCC1466EF537BCB1CAA7DDC910D232FBFA25  : public RuntimeObject
+// WallManagerScriptLevel1/<vanishWall>d__17
+struct U3CvanishWallU3Ed__17_t7F27566C9A98E24E503A6297435F8502446A3479  : public RuntimeObject
 {
-	// System.Int32 WallManagerScriptLevel1/<vanishWall>d__18::<>1__state
+	// System.Int32 WallManagerScriptLevel1/<vanishWall>d__17::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object WallManagerScriptLevel1/<vanishWall>d__18::<>2__current
+	// System.Object WallManagerScriptLevel1/<vanishWall>d__17::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// WallManagerScriptLevel1 WallManagerScriptLevel1/<vanishWall>d__18::<>4__this
+	// WallManagerScriptLevel1 WallManagerScriptLevel1/<vanishWall>d__17::<>4__this
 	WallManagerScriptLevel1_t0F9984B4EE44E4D8BC429561796675E210BF91C1* ___U3CU3E4__this_2;
 };
 
-// WallManagerScriptLevel2/<vanishWall>d__17
-struct U3CvanishWallU3Ed__17_t92872C55FE3ACEA166EE87EDE2461F0E6119DADA  : public RuntimeObject
+// WallManagerScriptLevel2/<vanishWall>d__16
+struct U3CvanishWallU3Ed__16_tD0AAA6A82A80EA27C5AAF3694C2D50A29361E705  : public RuntimeObject
 {
-	// System.Int32 WallManagerScriptLevel2/<vanishWall>d__17::<>1__state
+	// System.Int32 WallManagerScriptLevel2/<vanishWall>d__16::<>1__state
 	int32_t ___U3CU3E1__state_0;
-	// System.Object WallManagerScriptLevel2/<vanishWall>d__17::<>2__current
+	// System.Object WallManagerScriptLevel2/<vanishWall>d__16::<>2__current
 	RuntimeObject* ___U3CU3E2__current_1;
-	// WallManagerScriptLevel2 WallManagerScriptLevel2/<vanishWall>d__17::<>4__this
+	// WallManagerScriptLevel2 WallManagerScriptLevel2/<vanishWall>d__16::<>4__this
 	WallManagerScriptLevel2_t64BBEA04AEF9B8E4DE453FAD6795BECD31CAFB53* ___U3CU3E4__this_2;
 };
 
@@ -39821,20 +39821,18 @@ struct WallManagerScriptLevel1_t0F9984B4EE44E4D8BC429561796675E210BF91C1  : publ
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___riddleObject_6;
 	// System.Int32 WallManagerScriptLevel1::i
 	int32_t ___i_7;
-	// UnityEngine.GameObject WallManagerScriptLevel1::gameOverOverlay
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameOverOverlay_9;
 	// TimerUI WallManagerScriptLevel1::timerUI
-	TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* ___timerUI_10;
+	TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* ___timerUI_9;
 	// GroundCrumble WallManagerScriptLevel1::groundCrumble
-	GroundCrumble_t89DBCCDCEF493093ECC4161DE901E0C6BD33610C* ___groundCrumble_11;
+	GroundCrumble_t89DBCCDCEF493093ECC4161DE901E0C6BD33610C* ___groundCrumble_10;
 	// System.Int32 WallManagerScriptLevel1::emptyIndex
-	int32_t ___emptyIndex_12;
+	int32_t ___emptyIndex_11;
 	// System.Int32 WallManagerScriptLevel1::lastFilledIndex
-	int32_t ___lastFilledIndex_13;
+	int32_t ___lastFilledIndex_12;
 	// PlayerMovement WallManagerScriptLevel1::playerMovementscript
-	PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351* ___playerMovementscript_14;
+	PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351* ___playerMovementscript_13;
 	// System.Collections.Generic.Dictionary`2<System.Char,System.Int32> WallManagerScriptLevel1::LetterCoding
-	Dictionary_2_t63C09FF55518C7D6184D63646025DC0B7B1785D0* ___LetterCoding_16;
+	Dictionary_2_t63C09FF55518C7D6184D63646025DC0B7B1785D0* ___LetterCoding_15;
 };
 
 // WallManagerScriptLevel2
@@ -39848,20 +39846,18 @@ struct WallManagerScriptLevel2_t64BBEA04AEF9B8E4DE453FAD6795BECD31CAFB53  : publ
 	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___riddleObject_6;
 	// System.Int32 WallManagerScriptLevel2::i
 	int32_t ___i_7;
-	// UnityEngine.GameObject WallManagerScriptLevel2::gameOverOverlay
-	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameOverOverlay_9;
 	// TimerUI WallManagerScriptLevel2::timerUI
-	TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* ___timerUI_10;
+	TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* ___timerUI_9;
 	// GroundCrumble WallManagerScriptLevel2::groundCrumble
-	GroundCrumble_t89DBCCDCEF493093ECC4161DE901E0C6BD33610C* ___groundCrumble_11;
+	GroundCrumble_t89DBCCDCEF493093ECC4161DE901E0C6BD33610C* ___groundCrumble_10;
 	// PlayerMovement WallManagerScriptLevel2::playerMovementscript
-	PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351* ___playerMovementscript_12;
+	PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351* ___playerMovementscript_11;
 	// System.Int32 WallManagerScriptLevel2::emptyIndex
-	int32_t ___emptyIndex_13;
+	int32_t ___emptyIndex_12;
 	// System.Int32 WallManagerScriptLevel2::lastFilledIndex
-	int32_t ___lastFilledIndex_14;
+	int32_t ___lastFilledIndex_13;
 	// System.Collections.Generic.Dictionary`2<System.Char,System.Int32> WallManagerScriptLevel2::LetterCoding
-	Dictionary_2_t63C09FF55518C7D6184D63646025DC0B7B1785D0* ___LetterCoding_15;
+	Dictionary_2_t63C09FF55518C7D6184D63646025DC0B7B1785D0* ___LetterCoding_14;
 };
 
 // setMaxScreenSize
@@ -48231,13 +48227,13 @@ struct U3CU3Ec_tD85AC599FA8D7FFDFB50F5FD2F62908FDEB78B2C_StaticFields
 
 // UnityEngine.UIElements.VisualTreeUpdater/UpdaterArray
 
-// WallManagerScriptLevel1/<vanishWall>d__18
+// WallManagerScriptLevel1/<vanishWall>d__17
 
-// WallManagerScriptLevel1/<vanishWall>d__18
+// WallManagerScriptLevel1/<vanishWall>d__17
 
-// WallManagerScriptLevel2/<vanishWall>d__17
+// WallManagerScriptLevel2/<vanishWall>d__16
 
-// WallManagerScriptLevel2/<vanishWall>d__17
+// WallManagerScriptLevel2/<vanishWall>d__16
 
 // System.Threading.CancellationTokenSource/LinkedNCancellationTokenSource/<>c
 struct U3CU3Ec_t1F9B8B40FA831BFB882DFB3253DEB74C1A4059E3_StaticFields
@@ -56497,7 +56493,7 @@ struct WallManagerScriptLevel1_t0F9984B4EE44E4D8BC429561796675E210BF91C1_StaticF
 	// System.Int32[] WallManagerScriptLevel1::filledPos
 	Int32U5BU5D_t19C97395396A72ECAF310612F0760F165060314C* ___filledPos_8;
 	// UnityEngine.Rigidbody WallManagerScriptLevel1::rb
-	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb_15;
+	Rigidbody_t268697F5A994213ED97393309870968BC1C7393C* ___rb_14;
 };
 
 // WallManagerScriptLevel1
@@ -63748,11 +63744,11 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3354 = { sizeof(TimerUI_tD58
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3355;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3355 = { sizeof(TriggerCameraMove_t87A35CFCCA7828167B2186CF0A4D36131CDA46A2), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3356;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3356 = { sizeof(U3CvanishWallU3Ed__18_t3C40CCC1466EF537BCB1CAA7DDC910D232FBFA25), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3356 = { sizeof(U3CvanishWallU3Ed__17_t7F27566C9A98E24E503A6297435F8502446A3479), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3357;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3357 = { sizeof(WallManagerScriptLevel1_t0F9984B4EE44E4D8BC429561796675E210BF91C1), -1, sizeof(WallManagerScriptLevel1_t0F9984B4EE44E4D8BC429561796675E210BF91C1_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3358;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3358 = { sizeof(U3CvanishWallU3Ed__17_t92872C55FE3ACEA166EE87EDE2461F0E6119DADA), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3358 = { sizeof(U3CvanishWallU3Ed__16_tD0AAA6A82A80EA27C5AAF3694C2D50A29361E705), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3359;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3359 = { sizeof(WallManagerScriptLevel2_t64BBEA04AEF9B8E4DE453FAD6795BECD31CAFB53), -1, sizeof(WallManagerScriptLevel2_t64BBEA04AEF9B8E4DE453FAD6795BECD31CAFB53_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3360;

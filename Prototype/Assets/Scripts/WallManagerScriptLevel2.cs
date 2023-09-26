@@ -9,7 +9,6 @@ public class WallManagerScriptLevel2 : MonoBehaviour
     public GameObject riddleObject;
     private int i = -1;
     public static int[] filledPos = {0,0,0,0};
-    public GameObject gameOverOverlay;
     public TimerUI timerUI;
     public GroundCrumble groundCrumble;
     public PlayerMovement playerMovementscript;

@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         groundCrumble = GameObject.Find("GroundParent").GetComponent<GroundCrumble>();
-        yValue   = 1.4f;
+        yValue   = 1.2f;
     }
 
     private void Update()
@@ -45,9 +45,10 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             isGrounded = false;
         }
-        
+
         if(transform.position.y < yValue)
         {
+            Debug.Log("y value less calling gameoveroverlay");
             gameOverOverlay.SetActive(true);
             timerUI.PauseTimer();  
             this.enabled = false; //stop player movement
@@ -64,17 +65,18 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
         }
-        if (collision.gameObject.CompareTag("Last"))
-        {
-            Debug.Log("Last tag called");
-            ShowEndGameOverlay();
-        }
+        // if (collision.gameObject.CompareTag("Last"))
+        // {
+        //     Debug.Log("Last tag called");
+        //     ShowEndGameOverlay();
+        // }
     }
 
     public void ShowEndGameOverlay()
     {
         endGameOverlay.SetActive(true);  // Show the overlay
-        timerUI.PauseTimer();  
+        timerUI.PauseTimer();
+        timerUI.isGameOver = true;  
         this.enabled = false; //stop player movement
         groundCrumble.StopCrumbling();
         Invoke("LoadMainScene", 5f);  // Call LoadMainScene after 10 seconds
