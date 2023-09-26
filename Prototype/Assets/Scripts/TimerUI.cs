@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class TimerUI : MonoBehaviour
 {
-    public float timeLeft = 40f;
+    private float timeLeft = 60f;
     private bool isPaused = false;
-    private bool isGameOver = false; // Add this variable to track if the game is over
+    public bool isGameOver = false; // Add this variable to track if the game is over
 
     public GameObject gameOverOverlay; // Reference to your game over overlay GameObject
 
@@ -28,6 +28,7 @@ public class TimerUI : MonoBehaviour
         else if (!isGameOver) // Check if the game is not already over
         {
             // Timer has ended, call the game over function
+            Debug.Log("timer ui else if gameover");
             GameOver();
         }
     }
@@ -37,6 +38,11 @@ public class TimerUI : MonoBehaviour
         int minutes = (int)(timeLeft / 60);
         int seconds = (int)(timeLeft % 60);
         timerText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+        if (timeLeft <= 10)
+        {
+            timerText.color = Color.red;
+            timerText.fontSize = 25f;
+        }
     }
 
     public void PauseTimer()
@@ -53,13 +59,13 @@ public class TimerUI : MonoBehaviour
     {
         // Set the game over state
         isGameOver = true;
-
+        Debug.Log("gameoveroverlay caleed from timer ui");
         // Activate the game over overlay
         gameOverOverlay.SetActive(true);
         Invoke("LoadMainScene", 5f);
     }
     private void LoadMainScene()
     {
-        SceneManager.LoadScene("MainScene");  // Replace "MainScene" with the actual name of your main scene
+        SceneManager.LoadScene("MainScene");  
     }
 }
