@@ -302,6 +302,7 @@
 "Assets/Scripts/PlayerCollision.cs"
 "Assets/Scripts/PlayerHealth.cs"
 "Assets/Scripts/PlayerMovement.cs"
+"Assets/Scripts/setMaxScreenSize.cs"
 "Assets/Scripts/TimerUI.cs"
 "Assets/Scripts/TriggerCameraMove.cs"
 "Assets/Scripts/WallManagerScriptLevel1.cs"

@@ -112,97 +112,91 @@ extern void PlayerMovement_ShowEndGameOverlay_mC1A97BBFAA968C82B7CD5E9048D75CB4A
 extern void PlayerMovement_LoadMainScene_mAF9C92F6C396F418C5E831FB1F771699524B4343 (void);
 // 0x00000032 System.Void PlayerMovement::.ctor()
 extern void PlayerMovement__ctor_mB37559C5B0638161878D20E00B7C672FC38BBBAA (void);
-// 0x00000033 System.Void TimerUI::Start()
+// 0x00000033 System.Void setMaxScreenSize::Start()
+extern void setMaxScreenSize_Start_mF9198CAF4A8107C38542EE237B0818510F359137 (void);
+// 0x00000034 System.Void setMaxScreenSize::Update()
+extern void setMaxScreenSize_Update_m38285D9710D5B8CFFB7309824C77932E666F2EFA (void);
+// 0x00000035 System.Void setMaxScreenSize::.ctor()
+extern void setMaxScreenSize__ctor_m1F82297498A34705519BC60D7CC7F839BF7D6C31 (void);
+// 0x00000036 System.Void TimerUI::Start()
 extern void TimerUI_Start_m45633BA52DE1E402BAE09123B777C4BDE3B84B2A (void);
-// 0x00000034 System.Void TimerUI::Update()
+// 0x00000037 System.Void TimerUI::Update()
 extern void TimerUI_Update_m24FB147BCD6FEE8597DE38EDD998BF5E13FC4FE9 (void);
-// 0x00000035 System.Void TimerUI::UpdateTimerDisplay()
+// 0x00000038 System.Void TimerUI::UpdateTimerDisplay()
 extern void TimerUI_UpdateTimerDisplay_m1D447B5706594A2D4241E073C263439C87FF6659 (void);
-// 0x00000036 System.Void TimerUI::PauseTimer()
+// 0x00000039 System.Void TimerUI::PauseTimer()
 extern void TimerUI_PauseTimer_mE0F2C169D86033BFC3FD248BBC2114726279572F (void);
-// 0x00000037 System.Void TimerUI::AddTime(System.Single)
+// 0x0000003A System.Void TimerUI::AddTime(System.Single)
 extern void TimerUI_AddTime_mD2B1B956C7099588FC768FF4D86C6BE14F034CA3 (void);
-// 0x00000038 System.Void TimerUI::FreezeTime(System.Single)
-extern void TimerUI_FreezeTime_m53CC07E8C5F7BD78D8F274E1363A6A224ECD547B (void);
-// 0x00000039 System.Collections.IEnumerator TimerUI::UnfreezeTimeAfterDelay(System.Single)
-extern void TimerUI_UnfreezeTimeAfterDelay_m8BE4D299CB173C0F0628CEFAD0E6430A4CA4C7AD (void);
-// 0x0000003A System.Void TimerUI::.ctor()
+// 0x0000003B System.Void TimerUI::GameOver()
+extern void TimerUI_GameOver_m732A31F2A5035BBD6E8F2A261DC3171254A654FB (void);
+// 0x0000003C System.Void TimerUI::LoadMainScene()
+extern void TimerUI_LoadMainScene_m820F1BC4C5A7ADE56CCEC20D71A49230331F7D91 (void);
+// 0x0000003D System.Void TimerUI::.ctor()
 extern void TimerUI__ctor_m46044F81D2705A1C99BCD38558ED00D46E37B796 (void);
-// 0x0000003B System.Void TimerUI/<UnfreezeTimeAfterDelay>d__11::.ctor(System.Int32)
-extern void U3CUnfreezeTimeAfterDelayU3Ed__11__ctor_m017ABF65EA7A86E973DD781B9DE73F442669E4C0 (void);
-// 0x0000003C System.Void TimerUI/<UnfreezeTimeAfterDelay>d__11::System.IDisposable.Dispose()
-extern void U3CUnfreezeTimeAfterDelayU3Ed__11_System_IDisposable_Dispose_m719867A4A0E1939AA0C30D7B0E99714BA54F6D72 (void);
-// 0x0000003D System.Boolean TimerUI/<UnfreezeTimeAfterDelay>d__11::MoveNext()
-extern void U3CUnfreezeTimeAfterDelayU3Ed__11_MoveNext_m03EBA042F0F4D1E0B383FB3C88CDC47B034139C7 (void);
-// 0x0000003E System.Object TimerUI/<UnfreezeTimeAfterDelay>d__11::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
-extern void U3CUnfreezeTimeAfterDelayU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m71E93F360A6EDDF4709EAF91F4B269C7F4B6FAD4 (void);
-// 0x0000003F System.Void TimerUI/<UnfreezeTimeAfterDelay>d__11::System.Collections.IEnumerator.Reset()
-extern void U3CUnfreezeTimeAfterDelayU3Ed__11_System_Collections_IEnumerator_Reset_mA5624FF2A1E242FA6FF7476667BC93DB138224B8 (void);
-// 0x00000040 System.Object TimerUI/<UnfreezeTimeAfterDelay>d__11::System.Collections.IEnumerator.get_Current()
-extern void U3CUnfreezeTimeAfterDelayU3Ed__11_System_Collections_IEnumerator_get_Current_m25FD3FD5FF1052A44A1B25EE6AA3AA2134CF4716 (void);
-// 0x00000041 System.Void TriggerCameraMove::Start()
+// 0x0000003E System.Void TriggerCameraMove::Start()
 extern void TriggerCameraMove_Start_mD5B74D39A09DE5DB7B013CDD0485CE303EE52E14 (void);
-// 0x00000042 System.Void TriggerCameraMove::OnTriggerEnter2D(UnityEngine.Collider2D)
+// 0x0000003F System.Void TriggerCameraMove::OnTriggerEnter2D(UnityEngine.Collider2D)
 extern void TriggerCameraMove_OnTriggerEnter2D_m2085512526F39B8B2FCAAB5FF717CFDD64D726B1 (void);
-// 0x00000043 System.Void TriggerCameraMove::.ctor()
+// 0x00000040 System.Void TriggerCameraMove::.ctor()
 extern void TriggerCameraMove__ctor_m8683AB18921B40AC3DD01AEB6A06B1AEABB42A70 (void);
-// 0x00000044 System.Void WallManagerScriptLevel1::Start()
+// 0x00000041 System.Void WallManagerScriptLevel1::Start()
 extern void WallManagerScriptLevel1_Start_m80E546B654290E07ECFC5ADCA5658BB434E9485B (void);
-// 0x00000045 System.Void WallManagerScriptLevel1::Update()
+// 0x00000042 System.Void WallManagerScriptLevel1::Update()
 extern void WallManagerScriptLevel1_Update_m1BD22E6B29AD1363919311289D7EB6DB4CA23E35 (void);
-// 0x00000046 System.Void WallManagerScriptLevel1::ShowAlpha(System.Char)
+// 0x00000043 System.Void WallManagerScriptLevel1::ShowAlpha(System.Char)
 extern void WallManagerScriptLevel1_ShowAlpha_mD521C98DDCB03DDC9F4F5E09B44AF3A10DF1DE72 (void);
-// 0x00000047 System.Void WallManagerScriptLevel1::HideAlpha(System.Char)
+// 0x00000044 System.Void WallManagerScriptLevel1::HideAlpha(System.Char)
 extern void WallManagerScriptLevel1_HideAlpha_m59DC8AADB5E318B246ED42DD3B138B35150696CC (void);
-// 0x00000048 System.Void WallManagerScriptLevel1::CheckCompletion()
+// 0x00000045 System.Void WallManagerScriptLevel1::CheckCompletion()
 extern void WallManagerScriptLevel1_CheckCompletion_m11060DAB8C67EB81FFAEE8D0BC702E644AA9CD31 (void);
-// 0x00000049 System.Collections.IEnumerator WallManagerScriptLevel1::vanishWall()
+// 0x00000046 System.Collections.IEnumerator WallManagerScriptLevel1::vanishWall()
 extern void WallManagerScriptLevel1_vanishWall_m7EDFFE269D46C4AD08400B589BE4A8A37F1DC28D (void);
-// 0x0000004A System.Void WallManagerScriptLevel1::.ctor()
+// 0x00000047 System.Void WallManagerScriptLevel1::.ctor()
 extern void WallManagerScriptLevel1__ctor_m61A298E7434DF298FAB1C975D535AAADE06A2CF5 (void);
-// 0x0000004B System.Void WallManagerScriptLevel1::.cctor()
+// 0x00000048 System.Void WallManagerScriptLevel1::.cctor()
 extern void WallManagerScriptLevel1__cctor_m2E40C62A216B3121BEB96337ED764253B0BC8A3F (void);
-// 0x0000004C System.Void WallManagerScriptLevel1/<vanishWall>d__18::.ctor(System.Int32)
+// 0x00000049 System.Void WallManagerScriptLevel1/<vanishWall>d__18::.ctor(System.Int32)
 extern void U3CvanishWallU3Ed__18__ctor_m8D189DFFA88731564A201BE6FF82ABEEFAA7C1D7 (void);
-// 0x0000004D System.Void WallManagerScriptLevel1/<vanishWall>d__18::System.IDisposable.Dispose()
+// 0x0000004A System.Void WallManagerScriptLevel1/<vanishWall>d__18::System.IDisposable.Dispose()
 extern void U3CvanishWallU3Ed__18_System_IDisposable_Dispose_m30729EE521979DA09105B484EC35B34D27D60BFD (void);
-// 0x0000004E System.Boolean WallManagerScriptLevel1/<vanishWall>d__18::MoveNext()
+// 0x0000004B System.Boolean WallManagerScriptLevel1/<vanishWall>d__18::MoveNext()
 extern void U3CvanishWallU3Ed__18_MoveNext_mD4F0FA00252EEB29D6BDB1E79370816F80B2D0F5 (void);
-// 0x0000004F System.Object WallManagerScriptLevel1/<vanishWall>d__18::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000004C System.Object WallManagerScriptLevel1/<vanishWall>d__18::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CvanishWallU3Ed__18_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m7BD0A313D13DCDA5AF75F3DB773A027CBD0E3FFC (void);
-// 0x00000050 System.Void WallManagerScriptLevel1/<vanishWall>d__18::System.Collections.IEnumerator.Reset()
+// 0x0000004D System.Void WallManagerScriptLevel1/<vanishWall>d__18::System.Collections.IEnumerator.Reset()
 extern void U3CvanishWallU3Ed__18_System_Collections_IEnumerator_Reset_m0FC501D0EBBC50D100DC07A12C6393011C5BD450 (void);
-// 0x00000051 System.Object WallManagerScriptLevel1/<vanishWall>d__18::System.Collections.IEnumerator.get_Current()
+// 0x0000004E System.Object WallManagerScriptLevel1/<vanishWall>d__18::System.Collections.IEnumerator.get_Current()
 extern void U3CvanishWallU3Ed__18_System_Collections_IEnumerator_get_Current_mD8EB05E5AA08D5B3A2B89FFB1F384E5B9EFD97A3 (void);
-// 0x00000052 System.Void WallManagerScriptLevel2::Start()
+// 0x0000004F System.Void WallManagerScriptLevel2::Start()
 extern void WallManagerScriptLevel2_Start_mC26CFBE4F85AC5B7636B2F21EE348978F3197DF2 (void);
-// 0x00000053 System.Void WallManagerScriptLevel2::Update()
+// 0x00000050 System.Void WallManagerScriptLevel2::Update()
 extern void WallManagerScriptLevel2_Update_m401669960144D8819EB797CEE4269C46C3B338E9 (void);
-// 0x00000054 System.Void WallManagerScriptLevel2::ShowAlpha(System.Char)
+// 0x00000051 System.Void WallManagerScriptLevel2::ShowAlpha(System.Char)
 extern void WallManagerScriptLevel2_ShowAlpha_m98B02E8A1C97291C631CB839B4947426A3E8ABA8 (void);
-// 0x00000055 System.Void WallManagerScriptLevel2::HideAlpha(System.Char)
+// 0x00000052 System.Void WallManagerScriptLevel2::HideAlpha(System.Char)
 extern void WallManagerScriptLevel2_HideAlpha_m0A06ACE3FE8CD2490341144EEA3AD6435875C8FB (void);
-// 0x00000056 System.Void WallManagerScriptLevel2::CheckCompletion()
+// 0x00000053 System.Void WallManagerScriptLevel2::CheckCompletion()
 extern void WallManagerScriptLevel2_CheckCompletion_m6C3484B82C5010752BD4C994D86BD855835751E2 (void);
-// 0x00000057 System.Collections.IEnumerator WallManagerScriptLevel2::vanishWall()
+// 0x00000054 System.Collections.IEnumerator WallManagerScriptLevel2::vanishWall()
 extern void WallManagerScriptLevel2_vanishWall_mCE94179250273F5EDC8F8DF6BE6AEDC5DFEF7445 (void);
-// 0x00000058 System.Void WallManagerScriptLevel2::.ctor()
+// 0x00000055 System.Void WallManagerScriptLevel2::.ctor()
 extern void WallManagerScriptLevel2__ctor_m778E5B9127762FEF58C20EC43A891229D3FBA9CA (void);
-// 0x00000059 System.Void WallManagerScriptLevel2::.cctor()
+// 0x00000056 System.Void WallManagerScriptLevel2::.cctor()
 extern void WallManagerScriptLevel2__cctor_m43813B1FCF8DA22674288142523A01D963FE8D33 (void);
-// 0x0000005A System.Void WallManagerScriptLevel2/<vanishWall>d__17::.ctor(System.Int32)
+// 0x00000057 System.Void WallManagerScriptLevel2/<vanishWall>d__17::.ctor(System.Int32)
 extern void U3CvanishWallU3Ed__17__ctor_mAA3BCFEB7AD7C354B780F6396242B02DDF00DD7C (void);
-// 0x0000005B System.Void WallManagerScriptLevel2/<vanishWall>d__17::System.IDisposable.Dispose()
+// 0x00000058 System.Void WallManagerScriptLevel2/<vanishWall>d__17::System.IDisposable.Dispose()
 extern void U3CvanishWallU3Ed__17_System_IDisposable_Dispose_m6B4DA83B60A341EFC1285D416F8F5AF44BD6B81D (void);
-// 0x0000005C System.Boolean WallManagerScriptLevel2/<vanishWall>d__17::MoveNext()
+// 0x00000059 System.Boolean WallManagerScriptLevel2/<vanishWall>d__17::MoveNext()
 extern void U3CvanishWallU3Ed__17_MoveNext_mFFE7B21E9CD66F16ACA0E911F486EB62F814965F (void);
-// 0x0000005D System.Object WallManagerScriptLevel2/<vanishWall>d__17::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
+// 0x0000005A System.Object WallManagerScriptLevel2/<vanishWall>d__17::System.Collections.Generic.IEnumerator<System.Object>.get_Current()
 extern void U3CvanishWallU3Ed__17_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mBB38C9A95E8F2DC708F6A7FEA039F58CEF39A35E (void);
-// 0x0000005E System.Void WallManagerScriptLevel2/<vanishWall>d__17::System.Collections.IEnumerator.Reset()
+// 0x0000005B System.Void WallManagerScriptLevel2/<vanishWall>d__17::System.Collections.IEnumerator.Reset()
 extern void U3CvanishWallU3Ed__17_System_Collections_IEnumerator_Reset_m756E0485BD6D3E2A5A262F09A0CCA69F39C8B587 (void);
-// 0x0000005F System.Object WallManagerScriptLevel2/<vanishWall>d__17::System.Collections.IEnumerator.get_Current()
+// 0x0000005C System.Object WallManagerScriptLevel2/<vanishWall>d__17::System.Collections.IEnumerator.get_Current()
 extern void U3CvanishWallU3Ed__17_System_Collections_IEnumerator_get_Current_m7B7EBE4A8576DC5BFFBD5292F135F38A29B3A331 (void);
-static Il2CppMethodPointer s_methodPointers[95] = 
+static Il2CppMethodPointer s_methodPointers[92] = 
 {
 	AlphabetLevel1_Start_m36E88A7607608A731916833911A6BD1A6AD9CE3C,
 	AlphabetLevel1_Update_m20606D24878608966595F90F694AC5000B07A845,
@@ -254,20 +248,17 @@ static Il2CppMethodPointer s_methodPointers[95] =
 	PlayerMovement_ShowEndGameOverlay_mC1A97BBFAA968C82B7CD5E9048D75CB4AFC46161,
 	PlayerMovement_LoadMainScene_mAF9C92F6C396F418C5E831FB1F771699524B4343,
 	PlayerMovement__ctor_mB37559C5B0638161878D20E00B7C672FC38BBBAA,
+	setMaxScreenSize_Start_mF9198CAF4A8107C38542EE237B0818510F359137,
+	setMaxScreenSize_Update_m38285D9710D5B8CFFB7309824C77932E666F2EFA,
+	setMaxScreenSize__ctor_m1F82297498A34705519BC60D7CC7F839BF7D6C31,
 	TimerUI_Start_m45633BA52DE1E402BAE09123B777C4BDE3B84B2A,
 	TimerUI_Update_m24FB147BCD6FEE8597DE38EDD998BF5E13FC4FE9,
 	TimerUI_UpdateTimerDisplay_m1D447B5706594A2D4241E073C263439C87FF6659,
 	TimerUI_PauseTimer_mE0F2C169D86033BFC3FD248BBC2114726279572F,
 	TimerUI_AddTime_mD2B1B956C7099588FC768FF4D86C6BE14F034CA3,
-	TimerUI_FreezeTime_m53CC07E8C5F7BD78D8F274E1363A6A224ECD547B,
-	TimerUI_UnfreezeTimeAfterDelay_m8BE4D299CB173C0F0628CEFAD0E6430A4CA4C7AD,
+	TimerUI_GameOver_m732A31F2A5035BBD6E8F2A261DC3171254A654FB,
+	TimerUI_LoadMainScene_m820F1BC4C5A7ADE56CCEC20D71A49230331F7D91,
 	TimerUI__ctor_m46044F81D2705A1C99BCD38558ED00D46E37B796,
-	U3CUnfreezeTimeAfterDelayU3Ed__11__ctor_m017ABF65EA7A86E973DD781B9DE73F442669E4C0,
-	U3CUnfreezeTimeAfterDelayU3Ed__11_System_IDisposable_Dispose_m719867A4A0E1939AA0C30D7B0E99714BA54F6D72,
-	U3CUnfreezeTimeAfterDelayU3Ed__11_MoveNext_m03EBA042F0F4D1E0B383FB3C88CDC47B034139C7,
-	U3CUnfreezeTimeAfterDelayU3Ed__11_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_m71E93F360A6EDDF4709EAF91F4B269C7F4B6FAD4,
-	U3CUnfreezeTimeAfterDelayU3Ed__11_System_Collections_IEnumerator_Reset_mA5624FF2A1E242FA6FF7476667BC93DB138224B8,
-	U3CUnfreezeTimeAfterDelayU3Ed__11_System_Collections_IEnumerator_get_Current_m25FD3FD5FF1052A44A1B25EE6AA3AA2134CF4716,
 	TriggerCameraMove_Start_mD5B74D39A09DE5DB7B013CDD0485CE303EE52E14,
 	TriggerCameraMove_OnTriggerEnter2D_m2085512526F39B8B2FCAAB5FF717CFDD64D726B1,
 	TriggerCameraMove__ctor_m8683AB18921B40AC3DD01AEB6A06B1AEABB42A70,
@@ -300,7 +291,7 @@ static Il2CppMethodPointer s_methodPointers[95] =
 	U3CvanishWallU3Ed__17_System_Collections_IEnumerator_Reset_m756E0485BD6D3E2A5A262F09A0CCA69F39C8B587,
 	U3CvanishWallU3Ed__17_System_Collections_IEnumerator_get_Current_m7B7EBE4A8576DC5BFFBD5292F135F38A29B3A331,
 };
-static const int32_t s_InvokerIndices[95] = 
+static const int32_t s_InvokerIndices[92] = 
 {
 	3450,
 	3450,
@@ -356,16 +347,13 @@ static const int32_t s_InvokerIndices[95] =
 	3450,
 	3450,
 	3450,
+	3450,
+	3450,
+	3450,
 	2847,
-	2847,
-	2480,
 	3450,
-	2798,
 	3450,
-	3298,
-	3357,
 	3450,
-	3357,
 	3450,
 	2815,
 	3450,
@@ -376,7 +364,7 @@ static const int32_t s_InvokerIndices[95] =
 	3450,
 	3357,
 	3450,
-	5161,
+	5160,
 	2798,
 	3450,
 	3298,
@@ -390,7 +378,7 @@ static const int32_t s_InvokerIndices[95] =
 	3450,
 	3357,
 	3450,
-	5161,
+	5160,
 	2798,
 	3450,
 	3298,
@@ -402,7 +390,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	95,
+	92,
 	s_methodPointers,
 	0,
 	NULL,

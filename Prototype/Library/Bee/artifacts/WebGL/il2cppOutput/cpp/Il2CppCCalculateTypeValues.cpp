@@ -11552,19 +11552,6 @@ struct Scheduler_tDB0486C2DDAAB94544061CD295D4798386C62A79  : public RuntimeObje
 	ManualResetEvent_t63959486AA41A113A4353D0BF4A68E77EBA0A158* ___changed_4;
 };
 
-// TimerUI/<UnfreezeTimeAfterDelay>d__11
-struct U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0  : public RuntimeObject
-{
-	// System.Int32 TimerUI/<UnfreezeTimeAfterDelay>d__11::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object TimerUI/<UnfreezeTimeAfterDelay>d__11::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Single TimerUI/<UnfreezeTimeAfterDelay>d__11::delay
-	float ___delay_2;
-	// TimerUI TimerUI/<UnfreezeTimeAfterDelay>d__11::<>4__this
-	TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* ___U3CU3E4__this_3;
-};
-
 // UnityEngine.UI.ToggleGroup/<>c
 struct U3CU3Ec_tA35DB2FB45F5681443581EE922D10BC5C693F2A0  : public RuntimeObject
 {
@@ -39772,10 +39759,10 @@ struct TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D  : public MonoBehaviour
 	float ___timeLeft_4;
 	// System.Boolean TimerUI::isPaused
 	bool ___isPaused_5;
-	// System.Boolean TimerUI::isTimeFrozen
-	bool ___isTimeFrozen_6;
-	// System.Single TimerUI::originalTimeScale
-	float ___originalTimeScale_7;
+	// System.Boolean TimerUI::isGameOver
+	bool ___isGameOver_6;
+	// UnityEngine.GameObject TimerUI::gameOverOverlay
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameOverOverlay_7;
 	// TMPro.TextMeshProUGUI TimerUI::timerText
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___timerText_8;
 };
@@ -39875,6 +39862,11 @@ struct WallManagerScriptLevel2_t64BBEA04AEF9B8E4DE453FAD6795BECD31CAFB53  : publ
 	int32_t ___lastFilledIndex_14;
 	// System.Collections.Generic.Dictionary`2<System.Char,System.Int32> WallManagerScriptLevel2::LetterCoding
 	Dictionary_2_t63C09FF55518C7D6184D63646025DC0B7B1785D0* ___LetterCoding_15;
+};
+
+// setMaxScreenSize
+struct setMaxScreenSize_t0A06422F6F4AF01702A5F7BA726920BB4E1BD727  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
 };
 
 // UnityEngine.UI.Dropdown/DropdownItem
@@ -48045,10 +48037,6 @@ struct Scheduler_tDB0486C2DDAAB94544061CD295D4798386C62A79_StaticFields
 };
 
 // System.Threading.Timer/Scheduler
-
-// TimerUI/<UnfreezeTimeAfterDelay>d__11
-
-// TimerUI/<UnfreezeTimeAfterDelay>d__11
 
 // UnityEngine.UI.ToggleGroup/<>c
 struct U3CU3Ec_tA35DB2FB45F5681443581EE922D10BC5C693F2A0_StaticFields
@@ -56523,6 +56511,10 @@ struct WallManagerScriptLevel2_t64BBEA04AEF9B8E4DE453FAD6795BECD31CAFB53_StaticF
 
 // WallManagerScriptLevel2
 
+// setMaxScreenSize
+
+// setMaxScreenSize
+
 // UnityEngine.UI.Dropdown/DropdownItem
 
 // UnityEngine.UI.Dropdown/DropdownItem
@@ -63750,7 +63742,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3351 = { sizeof(PlayerHealth
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3352;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3352 = { sizeof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351), -1, sizeof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351_StaticFields), 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3353;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3353 = { sizeof(U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3353 = { sizeof(setMaxScreenSize_t0A06422F6F4AF01702A5F7BA726920BB4E1BD727), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3354;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3354 = { sizeof(TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3355;

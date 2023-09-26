@@ -1053,19 +1053,6 @@ struct U3CU3Ec_t04E77827D54CC7D69F04FDFC5A84C3F7392F9A76  : public RuntimeObject
 {
 };
 
-// TimerUI/<UnfreezeTimeAfterDelay>d__11
-struct U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0  : public RuntimeObject
-{
-	// System.Int32 TimerUI/<UnfreezeTimeAfterDelay>d__11::<>1__state
-	int32_t ___U3CU3E1__state_0;
-	// System.Object TimerUI/<UnfreezeTimeAfterDelay>d__11::<>2__current
-	RuntimeObject* ___U3CU3E2__current_1;
-	// System.Single TimerUI/<UnfreezeTimeAfterDelay>d__11::delay
-	float ___delay_2;
-	// TimerUI TimerUI/<UnfreezeTimeAfterDelay>d__11::<>4__this
-	TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D* ___U3CU3E4__this_3;
-};
-
 // WallManagerScriptLevel1/<vanishWall>d__18
 struct U3CvanishWallU3Ed__18_t3C40CCC1466EF537BCB1CAA7DDC910D232FBFA25  : public RuntimeObject
 {
@@ -5229,10 +5216,10 @@ struct TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D  : public MonoBehaviour
 	float ___timeLeft_4;
 	// System.Boolean TimerUI::isPaused
 	bool ___isPaused_5;
-	// System.Boolean TimerUI::isTimeFrozen
-	bool ___isTimeFrozen_6;
-	// System.Single TimerUI::originalTimeScale
-	float ___originalTimeScale_7;
+	// System.Boolean TimerUI::isGameOver
+	bool ___isGameOver_6;
+	// UnityEngine.GameObject TimerUI::gameOverOverlay
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___gameOverOverlay_7;
 	// TMPro.TextMeshProUGUI TimerUI::timerText
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___timerText_8;
 };
@@ -5999,10 +5986,6 @@ struct U3CU3Ec_t04E77827D54CC7D69F04FDFC5A84C3F7392F9A76_StaticFields
 };
 
 // UnityEngine.TextCore.Text.SpriteAsset/<>c
-
-// TimerUI/<UnfreezeTimeAfterDelay>d__11
-
-// TimerUI/<UnfreezeTimeAfterDelay>d__11
 
 // WallManagerScriptLevel1/<vanishWall>d__18
 
@@ -7626,12 +7609,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3351[2] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3352[11] = 
 {
 	static_cast<int32_t>(offsetof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351, ___speed_4)),static_cast<int32_t>(offsetof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351, ___jumpForce_5)),static_cast<int32_t>(offsetof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351_StaticFields, ___groundCrumble_6)),static_cast<int32_t>(offsetof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351, ___hasMovedForward_7)),static_cast<int32_t>(offsetof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351, ___isGrounded_8)),static_cast<int32_t>(offsetof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351, ___rb_9)),static_cast<int32_t>(offsetof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351, ___endGameOverlay_10)),static_cast<int32_t>(offsetof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351, ___timerUI_11)),static_cast<int32_t>(offsetof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351, ___gameOverOverlay_12)),static_cast<int32_t>(offsetof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351, ___yValue_13)),static_cast<int32_t>(offsetof(PlayerMovement_t4A0A0A8C937BC1D4FC570D1B5B50847338423351_StaticFields, ___scenechanged_14)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3353[4] = 
-{
-	static_cast<int32_t>(offsetof(U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0, ___delay_2)),static_cast<int32_t>(offsetof(U3CUnfreezeTimeAfterDelayU3Ed__11_tB2899B37690C9FFCB8B37B4A0884F86EE14C5AC0, ___U3CU3E4__this_3)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3354[5] = 
 {
-	static_cast<int32_t>(offsetof(TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D, ___timeLeft_4)),static_cast<int32_t>(offsetof(TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D, ___isPaused_5)),static_cast<int32_t>(offsetof(TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D, ___isTimeFrozen_6)),static_cast<int32_t>(offsetof(TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D, ___originalTimeScale_7)),static_cast<int32_t>(offsetof(TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D, ___timerText_8)),};
+	static_cast<int32_t>(offsetof(TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D, ___timeLeft_4)),static_cast<int32_t>(offsetof(TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D, ___isPaused_5)),static_cast<int32_t>(offsetof(TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D, ___isGameOver_6)),static_cast<int32_t>(offsetof(TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D, ___gameOverOverlay_7)),static_cast<int32_t>(offsetof(TimerUI_tD58705ED5C403A9B288A5956F60B8AB829F02C3D, ___timerText_8)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3355[4] = 
 {
 	static_cast<int32_t>(offsetof(TriggerCameraMove_t87A35CFCCA7828167B2186CF0A4D36131CDA46A2, ___mainCamera_4)),static_cast<int32_t>(offsetof(TriggerCameraMove_t87A35CFCCA7828167B2186CF0A4D36131CDA46A2, ___moveDistance_5)),static_cast<int32_t>(offsetof(TriggerCameraMove_t87A35CFCCA7828167B2186CF0A4D36131CDA46A2, ___hasTriggeredCameraMove_6)),static_cast<int32_t>(offsetof(TriggerCameraMove_t87A35CFCCA7828167B2186CF0A4D36131CDA46A2, ___playerMovementscript_7)),};
