@@ -3,7 +3,7 @@
     {
       "type": "il2cppData",
       "msg": {
-        "build_event_id": "d1ae9ce68c810482abf491b0fbe06301",
+        "build_event_id": "df0e2be5bfa3c42e087760181b2878ef",
         "node_executed": false,
         "attribute_total_count_eager_static_constructor": 8,
         "attribute_total_count_set_option": 0,
@@ -40,13 +40,13 @@
     {
       "type": "playerBuildTimingData",
       "msg": {
-        "build_event_id": "d1ae9ce68c810482abf491b0fbe06301",
-        "build_player": 2555,
-        "preprocess_player": 10,
-        "produce_player_script_assemblies": 1168,
+        "build_event_id": "df0e2be5bfa3c42e087760181b2878ef",
+        "build_player": 4434,
+        "preprocess_player": 26,
+        "produce_player_script_assemblies": 1201,
         "build_scripts_dlls": 99,
-        "writing_asset_files": 22,
-        "postprocess_built_player": 279,
+        "writing_asset_files": 25,
+        "postprocess_built_player": 315,
         "node_summary_table": []
       },
       "version": 1
@@ -54,7 +54,7 @@
     {
       "type": "unityLinkerData",
       "msg": {
-        "build_event_id": "d1ae9ce68c810482abf491b0fbe06301",
+        "build_event_id": "df0e2be5bfa3c42e087760181b2878ef",
         "node_executed": false,
         "attribute_marked_count_always_link_assembly": 0,
         "attribute_swept_count_always_link_assembly": 0,
